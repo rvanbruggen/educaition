@@ -1,20 +1,49 @@
 ---
 layout: default
 title: Home
+body_class: home
 ---
 <h1>AI en onderwijs in Vlaanderen, wekelijks samengevat</h1>
-<p>EducAItion volgt nieuws, best practices en regelgeving rond artificiële intelligentie
+<p class="intro">EducAItion volgt nieuws, best practices en regelgeving rond artificiële intelligentie
 in het onderwijs — gefilterd op niveau, vak, thema en regio. Voor leerkrachten, eerst en vooral.</p>
 
-<h2>Recent</h2>
-<ul class="post-list">
-  {% for post in site.posts limit: 10 %}
-  <li>
-    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-    <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
-    {% include tag-badges.html item=post %}
-    <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
-  </li>
-  {% endfor %}
-</ul>
-<p><a href="{{ '/filter/' | relative_url }}">Alle artikels verkennen en filteren →</a></p>
+<div class="home-grid">
+  <section class="kolom-artikels">
+    <h2>Artikels</h2>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% unless post.type == "digest" or post.type == "digest-internationaal" %}
+        <li>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+          {% include tag-badges.html item=post %}
+          <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+        </li>
+        {% endunless %}
+      {% endfor %}
+    </ul>
+    <p><a href="{{ '/filter/' | relative_url }}">Alle artikels verkennen en filteren →</a></p>
+  </section>
+
+  <aside class="kolom-digests">
+    <div class="digest-paneel">
+      <h2>Wekelijkse digests</h2>
+      <p class="digest-uitleg">Elke week samengevat: wat beweegt er in Vlaanderen, en wat
+      betekent het internationale nieuws voor ons onderwijs.</p>
+      <ul class="digest-lijst">
+        {% for post in site.posts %}
+          {% if post.type == "digest" or post.type == "digest-internationaal" %}
+          <li class="digest-item {% if post.type == 'digest-internationaal' %}digest-int{% endif %}">
+            <span class="digest-label">
+              {% if post.type == "digest-internationaal" %}Internationaal{% else %}Vlaanderen{% endif %}
+            </span>
+            <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+            <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+          </li>
+          {% endif %}
+        {% endfor %}
+      </ul>
+      <p class="digest-alle"><a href="{{ '/digest/' | relative_url }}">Alle digests →</a></p>
+    </div>
+  </aside>
+</div>

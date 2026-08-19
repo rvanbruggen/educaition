@@ -3,6 +3,15 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.4.0 — 2026-08-19
+
+- Homepage: gebruikt nu 90% van de schermbreedte (header en footer ook)
+- Homepage: tweekolomslayout — artikels links, digests rechts in een eigen
+  gekleurd paneel (sticky), met labels Vlaanderen/Internationaal per digest
+- Internationale digest toegevoegd (week 34) + type `digest-internationaal`;
+  digestpagina gegroepeerd per soort
+- Wekelijkse geplande taak: elke zondag 18:00 onderzoek + draft van beide digests
+
 ## 0.3.1 — 2026-08-19
 
 - Fix: interne links in de digest misten de baseurl-prefix (`post_url` voegt die

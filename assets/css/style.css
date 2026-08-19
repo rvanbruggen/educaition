@@ -33,10 +33,13 @@ h1 { font-size: 2rem; }
 main { max-width: 780px; margin: 0 auto; padding: 1.8rem 1rem 3rem; }
 a { color: var(--accent); }
 
+/* homepage gebruikt 90% van de schermbreedte */
+body.home main { max-width: none; width: 90%; }
+
 /* ---- header ---- */
 .site-header {
   display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;
-  max-width: 780px; margin: 0 auto; padding: 1rem;
+  width: 90%; max-width: none; margin: 0 auto; padding: 1rem;
   border-bottom: 2px solid var(--ink);
 }
 .site-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
@@ -180,7 +183,48 @@ details[open] { box-shadow: 0 2px 8px rgba(35, 41, 70, .08); }
 
 /* ---- footer ---- */
 .site-footer {
-  max-width: 780px; margin: 0 auto; padding: 1.2rem 1rem 2rem;
+  width: 90%; max-width: none; margin: 0 auto; padding: 1.2rem 1rem 2rem;
   border-top: 2px solid var(--ink); color: var(--muted); font-size: .85rem;
 }
+
+/* ---- homepage: twee kolommen ---- */
+.intro { font-size: 1.05rem; max-width: 60ch; }
+.home-grid {
+  display: grid; grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
+  gap: 2rem; align-items: start; margin-top: 1rem;
+}
+@media (max-width: 900px) { .home-grid { grid-template-columns: 1fr; } }
+.kolom-artikels h2, .digest-paneel h2 { margin-top: 0; }
+
+/* digestpaneel rechts: eigen kleur en kader */
+.digest-paneel {
+  background: linear-gradient(160deg, #eef0ff 0%, #f6ecff 100%);
+  border: 2px solid var(--accent);
+  border-radius: 14px;
+  padding: 1.2rem 1.3rem;
+  box-shadow: 0 3px 12px rgba(79, 70, 229, .12);
+  position: sticky; top: 1rem;
+}
+.digest-uitleg { font-size: .9rem; color: var(--muted); }
+.digest-lijst { list-style: none; padding: 0; margin: 0; }
+.digest-item {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-left: 5px solid var(--accent);
+  border-radius: 10px;
+  padding: .7rem .9rem; margin: .7rem 0;
+}
+.digest-item.digest-int { border-left-color: var(--accent-2); }
+.digest-item h3 { margin: .15rem 0; font-size: .98rem; }
+.digest-item h3 a { text-decoration: none; color: var(--ink); }
+.digest-item h3 a:hover { color: var(--accent); }
+.digest-item .meta { margin: 0; font-size: .8rem; }
+.digest-label {
+  display: inline-block; font-size: .68rem; font-weight: 700;
+  letter-spacing: .05em; text-transform: uppercase;
+  color: var(--accent); background: var(--accent-soft);
+  padding: .1rem .5rem; border-radius: 999px;
+}
+.digest-item.digest-int .digest-label { color: var(--accent-2); background: #f6ecff; }
+.digest-alle { margin-bottom: 0; font-weight: 600; }
 .site-footer .versie { font-size: .78rem; opacity: .85; }
