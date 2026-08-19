@@ -55,6 +55,13 @@ a { color: var(--accent); }
   padding: .15rem .1rem; border-bottom: 2px solid transparent;
 }
 .site-header nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
+.header-zoek input {
+  width: 8.5rem; padding: .35rem .7rem;
+  border: 1px solid var(--line); border-radius: 999px;
+  background: var(--card); color: var(--ink); font-size: .85rem;
+  transition: width .2s ease, border-color .2s ease;
+}
+.header-zoek input:focus { width: 12rem; outline: none; border-color: var(--accent); }
 
 .meta { color: var(--muted); font-size: .9rem; }
 
@@ -96,6 +103,14 @@ a { color: var(--accent); }
   background: var(--card); color: var(--ink);
 }
 #resultaat-teller { color: var(--muted); font-size: .9rem; }
+.zoekbalk { margin: 1rem 0; }
+.zoekbalk input {
+  width: 100%; padding: .7rem 1rem;
+  border: 2px solid var(--line); border-radius: 12px;
+  background: var(--card); color: var(--ink); font-size: 1rem;
+}
+.zoekbalk input:focus { outline: none; border-color: var(--accent); }
+mark { background: #fde68a; color: inherit; border-radius: 3px; padding: 0 .08em; }
 
 /* ---- FAQ ---- */
 .faq-nav { margin: 1rem 0; color: var(--muted); }

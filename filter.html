@@ -4,7 +4,12 @@ title: Verkennen
 permalink: /filter/
 ---
 <h1>Verkennen</h1>
-<p>Filter alle artikels op niveau, vak, thema, regio of contenttype.</p>
+<p>Zoek in alle artikels en filter op niveau, vak, thema, regio of contenttype.</p>
+
+<div class="zoekbalk">
+  <input type="search" id="f-zoek" placeholder="Zoek op trefwoord, bv. 'plagiaat' of 'AI Act'…"
+         autocomplete="off" aria-label="Zoek in alle artikels">
+</div>
 
 <div class="filters">
   <div>
@@ -51,11 +56,17 @@ permalink: /filter/
 <script>
 (function () {
   var data = [];
+  var zoekEl = document.getElementById('f-zoek');
   var selects = ['niveau', 'vak', 'thema', 'regio', 'type'].map(function (f) {
     return { facet: f, el: document.getElementById('f-' + f) };
   });
 
-  function matches(item) {
+  function normalize(s) {
+    return (s || '').toLowerCase()
+      .normalize('NFD').replace(/[̀-ͯ]/g, ''); // é→e, ë→e
+  }
+
+  function matchesFacets(item) {
     return selects.every(function (s) {
       var v = s.el.value;
       if (!v) return true;
@@ -65,8 +76,41 @@ permalink: /filter/
     });
   }
 
+  function matchesQuery(item, terms) {
+    if (!terms.length) return true;
+    var haystack = normalize(
+      item.title + ' ' + (item.excerpt || '') + ' ' + (item.content || '') + ' ' +
+      [].concat(item.niveau || [], item.vak || [], item.thema || [],
+                item.regio || [], item.doelgroep || [], item.type || []).join(' ')
+    );
+    return terms.every(function (t) { return haystack.indexOf(t) !== -1; });
+  }
+
+  function snippet(item, terms) {
+    var text = item.content || item.excerpt || '';
+    if (!terms.length) return (item.excerpt || '');
+    var idx = normalize(text).indexOf(terms[0]);
+    if (idx === -1) return (item.excerpt || '');
+    var start = Math.max(0, idx - 70);
+    var frag = (start > 0 ? '…' : '') +
+      text.slice(start, idx + terms[0].length + 110) + '…';
+    return frag;
+  }
+
+  function highlight(html, terms) {
+    if (!terms.length) return html;
+    terms.forEach(function (t) {
+      var re = new RegExp('(' + t.replace(/[.*+?^${}()|[\]\\]/g, '\\$&') + ')', 'gi');
+      html = html.replace(re, '<mark>$1</mark>');
+    });
+    return html;
+  }
+
   function render() {
-    var hits = data.filter(matches);
+    var terms = normalize(zoekEl.value).split(/\s+/).filter(Boolean);
+    var hits = data.filter(function (p) {
+      return matchesFacets(p) && matchesQuery(p, terms);
+    });
     document.getElementById('resultaat-teller').textContent =
       hits.length + ' artikel' + (hits.length === 1 ? '' : 's') + ' gevonden';
     document.getElementById('resultaten').innerHTML = hits.map(function (p) {
@@ -74,19 +118,28 @@ permalink: /filter/
         .concat(p.niveau || [], p.vak || [], p.thema || [])
         .map(function (t) { return '<span class="badge">' + t + '</span>'; })
         .join(' ');
-      return '<li><h3><a href="' + p.url + '">' + p.title + '</a></h3>' +
+      return '<li><h3><a href="' + p.url + '">' + highlight(p.title, terms) + '</a></h3>' +
         '<p class="meta">' + p.date + '</p>' +
         '<p class="badges">' + badges + '</p>' +
-        '<p>' + (p.excerpt || '') + '</p></li>';
+        '<p>' + highlight(snippet(p, terms), terms) + '</p></li>';
     }).join('');
+    // hou de zoekterm in de URL zodat je resultaten kunt delen
+    var params = new URLSearchParams(window.location.search);
+    if (zoekEl.value) { params.set('q', zoekEl.value); } else { params.delete('q'); }
+    var qs = params.toString();
+    history.replaceState(null, '', window.location.pathname + (qs ? '?' + qs : ''));
   }
 
   fetch('{{ "/search.json" | relative_url }}')
     .then(function (r) { return r.json(); })
     .then(function (json) {
       data = json;
+      var q = new URLSearchParams(window.location.search).get('q');
+      if (q) zoekEl.value = q;
       selects.forEach(function (s) { s.el.addEventListener('change', render); });
+      zoekEl.addEventListener('input', render);
       render();
+      if (q) zoekEl.focus();
     });
 })();
 </script>

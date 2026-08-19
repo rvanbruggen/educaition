@@ -25,6 +25,9 @@
       <a href="{{ '/discussie/' | relative_url }}">Ter discussie</a>
       <a href="{{ '/over/' | relative_url }}">Over</a>
     </nav>
+    <form class="header-zoek" action="{{ '/filter/' | relative_url }}" method="get" role="search">
+      <input type="search" name="q" placeholder="Zoeken…" aria-label="Zoek op de site">
+    </form>
   </header>
   <main>
     {{ content }}
