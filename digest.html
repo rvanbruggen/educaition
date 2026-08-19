@@ -4,10 +4,27 @@ title: Wekelijkse digest
 permalink: /digest/
 ---
 <h1>Wekelijkse digest</h1>
-<p>Elke week het belangrijkste nieuws over AI en onderwijs, samengevat in het Nederlands.</p>
+<p>Elke week het belangrijkste nieuws over AI en onderwijs, samengevat in het Nederlands —
+eerst wat er in Vlaanderen beweegt, daarna het internationale nieuws met duiding over wat
+het voor Vlaanderen betekent.</p>
+
+<h2>Vlaanderen</h2>
 <ul class="post-list">
   {% for post in site.posts %}
     {% if post.type == "digest" %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Internationaal, geduid voor Vlaanderen</h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.type == "digest-internationaal" %}
     <li>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>

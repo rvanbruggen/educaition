@@ -90,7 +90,8 @@ regio:
 
 type:
   - {slug: nieuws, naam: Nieuws}
-  - {slug: digest, naam: Wekelijkse digest}
+  - {slug: digest, naam: Wekelijkse digest (Vlaanderen)}
+  - {slug: digest-internationaal, naam: Wekelijkse digest (internationaal)}
   - {slug: gids-handleiding, naam: Gids / handleiding}
   - {slug: best-practice, naam: Best practice}
   - {slug: casestudy, naam: Casestudy}
