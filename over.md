@@ -18,4 +18,4 @@ ICT-coördinatoren en ouders.
 - Duiding bij regelgeving (AI Act, eindtermen, evaluatie en fraude) — informatief, geen juridisch advies
 
 Dit project is werk in uitvoering. Feedback is welkom via
-[GitHub](https://github.com/rikvanbruggen/educaition).
+[GitHub](https://github.com/rvanbruggen/educaition).

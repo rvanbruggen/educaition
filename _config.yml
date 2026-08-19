@@ -3,8 +3,8 @@ description: >-
   AI en onderwijs in Vlaanderen — nieuws, best practices en regelgeving,
   wekelijks samengevat en doorzoekbaar per niveau, vak en thema.
 lang: nl
-url: ""
-baseurl: ""
+url: "https://rvanbruggen.github.io"
+baseurl: "/educaition"
 
 # GitHub Pages-veilige plugins (whitelist)
 plugins:
