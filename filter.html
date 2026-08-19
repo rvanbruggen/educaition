@@ -1,0 +1,92 @@
+---
+layout: default
+title: Verkennen
+permalink: /filter/
+---
+<h1>Verkennen</h1>
+<p>Filter alle artikels op niveau, vak, thema, regio of contenttype.</p>
+
+<div class="filters">
+  <div>
+    <label for="f-niveau">Niveau</label>
+    <select id="f-niveau"><option value="">Alle</option>
+      {% for t in site.data.tags.niveau %}
+      <option value="{{ t.slug }}">{{ t.naam }}</option>
+      {% for k in t.kinderen %}<option value="{{ k.slug }}">— {{ k.naam }}</option>{% endfor %}
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label for="f-vak">Vak</label>
+    <select id="f-vak"><option value="">Alle</option>
+      {% for t in site.data.tags.vak %}
+      <option value="{{ t.slug }}">{{ t.naam }}</option>
+      {% for k in t.kinderen %}<option value="{{ k.slug }}">— {{ k.naam }}</option>{% endfor %}
+      {% endfor %}
+    </select>
+  </div>
+  <div>
+    <label for="f-thema">Thema</label>
+    <select id="f-thema"><option value="">Alle</option>
+      {% for t in site.data.tags.thema %}<option value="{{ t.slug }}">{{ t.naam }}</option>{% endfor %}
+    </select>
+  </div>
+  <div>
+    <label for="f-regio">Regio</label>
+    <select id="f-regio"><option value="">Alle</option>
+      {% for t in site.data.tags.regio %}<option value="{{ t.slug }}">{{ t.naam }}</option>{% endfor %}
+    </select>
+  </div>
+  <div>
+    <label for="f-type">Type</label>
+    <select id="f-type"><option value="">Alle</option>
+      {% for t in site.data.tags.type %}<option value="{{ t.slug }}">{{ t.naam }}</option>{% endfor %}
+    </select>
+  </div>
+</div>
+
+<p id="resultaat-teller"></p>
+<ul class="post-list" id="resultaten"></ul>
+
+<script>
+(function () {
+  var data = [];
+  var selects = ['niveau', 'vak', 'thema', 'regio', 'type'].map(function (f) {
+    return { facet: f, el: document.getElementById('f-' + f) };
+  });
+
+  function matches(item) {
+    return selects.every(function (s) {
+      var v = s.el.value;
+      if (!v) return true;
+      var field = item[s.facet];
+      if (Array.isArray(field)) return field.indexOf(v) !== -1;
+      return field === v;
+    });
+  }
+
+  function render() {
+    var hits = data.filter(matches);
+    document.getElementById('resultaat-teller').textContent =
+      hits.length + ' artikel' + (hits.length === 1 ? '' : 's') + ' gevonden';
+    document.getElementById('resultaten').innerHTML = hits.map(function (p) {
+      var badges = []
+        .concat(p.niveau || [], p.vak || [], p.thema || [])
+        .map(function (t) { return '<span class="badge">' + t + '</span>'; })
+        .join(' ');
+      return '<li><h3><a href="' + p.url + '">' + p.title + '</a></h3>' +
+        '<p class="meta">' + p.date + '</p>' +
+        '<p class="badges">' + badges + '</p>' +
+        '<p>' + (p.excerpt || '') + '</p></li>';
+    }).join('');
+  }
+
+  fetch('{{ "/search.json" | relative_url }}')
+    .then(function (r) { return r.json(); })
+    .then(function (json) {
+      data = json;
+      selects.forEach(function (s) { s.el.addEventListener('change', render); });
+      render();
+    });
+})();
+</script>

@@ -1,0 +1,18 @@
+---
+layout: default
+title: Wekelijkse digest
+permalink: /digest/
+---
+<h1>Wekelijkse digest</h1>
+<p>Elke week het belangrijkste nieuws over AI en onderwijs, samengevat in het Nederlands.</p>
+<ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.type == "digest" %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>

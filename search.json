@@ -1,0 +1,19 @@
+---
+layout: null
+---
+[
+{% for post in site.posts %}
+  {
+    "title": {{ post.title | jsonify }},
+    "url": {{ post.url | relative_url | jsonify }},
+    "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
+    "excerpt": {{ post.excerpt | strip_html | truncate: 200 | jsonify }},
+    "niveau": {{ post.niveau | jsonify }},
+    "vak": {{ post.vak | jsonify }},
+    "thema": {{ post.thema | jsonify }},
+    "regio": {{ post.regio | jsonify }},
+    "type": {{ post.type | jsonify }},
+    "doelgroep": {{ post.doelgroep | jsonify }}
+  }{% unless forloop.last %},{% endunless %}
+{% endfor %}
+]

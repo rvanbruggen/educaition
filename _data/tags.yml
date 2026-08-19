@@ -1,0 +1,108 @@
+# EducAItion — gecontroleerd tagvocabularium
+# Bestemming: _data/tags.yml in een Jekyll/GitHub Pages-site
+# Nieuwe tags alleen toevoegen via dit bestand.
+
+niveau:
+  - slug: basisonderwijs
+    naam: Basisonderwijs
+    kinderen:
+      - {slug: kleuteronderwijs, naam: Kleuteronderwijs}
+      - {slug: lager-onderwijs, naam: Lager onderwijs}
+  - slug: secundair-onderwijs
+    naam: Secundair onderwijs
+    kinderen:
+      - {slug: eerste-graad, naam: Eerste graad}
+      - {slug: tweede-graad, naam: Tweede graad}
+      - {slug: derde-graad, naam: Derde graad}
+    finaliteit:
+      - {slug: doorstroomfinaliteit, naam: Doorstroomfinaliteit}
+      - {slug: dubbele-finaliteit, naam: Dubbele finaliteit}
+      - {slug: arbeidsmarktfinaliteit, naam: Arbeidsmarktfinaliteit}
+  - slug: hoger-onderwijs
+    naam: Hoger onderwijs
+    kinderen:
+      - {slug: graduaat, naam: Graduaat}
+      - {slug: professionele-bachelor, naam: Professionele bachelor}
+      - {slug: academische-bachelor, naam: Academische bachelor}
+      - {slug: master, naam: Master}
+      - {slug: doctoraat-en-onderzoek, naam: Doctoraat & onderzoek}
+  - slug: levenslang-leren
+    naam: Levenslang leren
+    kinderen:
+      - {slug: volwassenenonderwijs, naam: Volwassenenonderwijs}
+      - {slug: deeltijds-kunstonderwijs, naam: Deeltijds kunstonderwijs}
+  - {slug: buitengewoon-onderwijs, naam: Buitengewoon onderwijs, dwarsdoorsnijdend: true}
+  - {slug: lerarenopleiding, naam: Lerarenopleiding, dwarsdoorsnijdend: true}
+
+vak:
+  - slug: talen
+    naam: Talen
+    kinderen:
+      - {slug: nederlands, naam: Nederlands}
+      - {slug: moderne-vreemde-talen, naam: Moderne vreemde talen}
+      - {slug: klassieke-talen, naam: Klassieke talen}
+  - {slug: wiskunde, naam: Wiskunde}
+  - slug: wetenschappen
+    naam: Wetenschappen
+    kinderen:
+      - {slug: biologie, naam: Biologie}
+      - {slug: chemie, naam: Chemie}
+      - {slug: fysica, naam: Fysica}
+      - {slug: natuurwetenschappen, naam: Natuurwetenschappen}
+  - {slug: stem-techniek, naam: STEM & techniek}
+  - {slug: informatica-digitale-competenties, naam: Informatica & digitale competenties}
+  - slug: mens-en-maatschappij
+    naam: Mens & maatschappij
+    kinderen:
+      - {slug: geschiedenis, naam: Geschiedenis}
+      - {slug: aardrijkskunde, naam: Aardrijkskunde}
+      - {slug: economie, naam: Economie}
+      - {slug: gedragswetenschappen, naam: Gedragswetenschappen}
+  - {slug: burgerschap-levensbeschouwing, naam: Burgerschap & levensbeschouwing}
+  - {slug: kunst-en-cultuur, naam: Kunst & cultuur}
+  - {slug: lichamelijke-opvoeding-gezondheid, naam: LO & gezondheid}
+  - {slug: beroepsgerichte-vorming, naam: Beroepsgerichte vorming}
+  - {slug: vakoverschrijdend, naam: Vakoverschrijdend, default: true}
+
+thema:
+  - {slug: beleid-en-regelgeving, naam: Beleid & regelgeving}
+  - {slug: evaluatie-en-fraude, naam: Evaluatie & fraude}
+  - {slug: didactiek-en-lespraktijk, naam: Didactiek & lespraktijk}
+  - {slug: ai-geletterdheid, naam: AI-geletterdheid}
+  - {slug: privacy-en-databescherming, naam: Privacy & databescherming}
+  - {slug: ethiek-en-maatschappij, naam: Ethiek & maatschappij}
+  - {slug: tools-en-platformen, naam: Tools & platformen}
+  - {slug: onderzoek-en-evidentie, naam: Onderzoek & evidentie}
+  - {slug: professionalisering, naam: Professionalisering}
+
+regio:
+  - slug: vlaanderen
+    naam: Vlaanderen
+    onderwijsnet:
+      - {slug: go, naam: GO! Onderwijs van de Vlaamse Gemeenschap}
+      - {slug: katholiek-onderwijs, naam: Katholiek Onderwijs Vlaanderen}
+      - {slug: ovsg, naam: OVSG (stedelijk & gemeentelijk)}
+      - {slug: pov, naam: POV (provinciaal)}
+  - {slug: belgie-federaal, naam: "België (federaal)"}
+  - {slug: nederland, naam: Nederland}
+  - {slug: eu, naam: Europese Unie}
+  - {slug: internationaal, naam: Internationaal}
+
+type:
+  - {slug: nieuws, naam: Nieuws}
+  - {slug: digest, naam: Wekelijkse digest}
+  - {slug: gids-handleiding, naam: Gids / handleiding}
+  - {slug: best-practice, naam: Best practice}
+  - {slug: casestudy, naam: Casestudy}
+  - {slug: onderzoek, naam: Onderzoek}
+  - {slug: beleidsdocument, naam: Beleidsdocument}
+  - {slug: tool-review, naam: Tool review}
+  - {slug: opinie, naam: Opinie}
+
+doelgroep:
+  - {slug: leerkracht, naam: Leerkracht}
+  - {slug: directie-en-beleid, naam: Directie & beleid}
+  - {slug: ict-coordinator, naam: "ICT-coördinator"}
+  - {slug: lerarenopleider, naam: Lerarenopleider}
+  - {slug: ouders, naam: Ouders}
+  - {slug: lerende, naam: Lerende (leerling/student)}

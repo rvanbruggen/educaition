@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {% seo %}
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  {% feed_meta %}
+</head>
+<body>
+  <header class="site-header">
+    <a class="site-title" href="{{ '/' | relative_url }}">Educ<span class="ai">AI</span>tion</a>
+    <nav>
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/filter/' | relative_url }}">Verkennen</a>
+      <a href="{{ '/digest/' | relative_url }}">Digest</a>
+      <a href="{{ '/over/' | relative_url }}">Over</a>
+    </nav>
+  </header>
+  <main>
+    {{ content }}
+  </main>
+  <footer class="site-footer">
+    <p>EducAItion — AI en onderwijs in Vlaanderen. Informatief, geen juridisch advies.
+       <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+  </footer>
+</body>
+</html>

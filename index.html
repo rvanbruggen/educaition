@@ -1,0 +1,20 @@
+---
+layout: default
+title: Home
+---
+<h1>AI en onderwijs in Vlaanderen, wekelijks samengevat</h1>
+<p>EducAItion volgt nieuws, best practices en regelgeving rond artificiële intelligentie
+in het onderwijs — gefilterd op niveau, vak, thema en regio. Voor leerkrachten, eerst en vooral.</p>
+
+<h2>Recent</h2>
+<ul class="post-list">
+  {% for post in site.posts limit: 10 %}
+  <li>
+    <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+    <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+    {% include tag-badges.html item=post %}
+    <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+  </li>
+  {% endfor %}
+</ul>
+<p><a href="{{ '/filter/' | relative_url }}">Alle artikels verkennen en filteren →</a></p>

@@ -1,0 +1,14 @@
+---
+layout: default
+---
+<article class="post">
+  <h1>{{ page.title }}</h1>
+  <p class="meta">
+    <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+    {% if page.bron %} · <a href="{{ page.bron }}" rel="noopener">bron</a>{% endif %}
+  </p>
+  {% include tag-badges.html item=page %}
+  <div class="content">
+    {{ content }}
+  </div>
+</article>
