@@ -17,5 +17,12 @@ ICT-coördinatoren en ouders.
 - Een doorzoekbare, gefilterde bibliotheek van artikels en bronnen
 - Duiding bij regelgeving (AI Act, eindtermen, evaluatie en fraude) — informatief, geen juridisch advies
 
-Dit project is werk in uitvoering. Feedback is welkom via
-[GitHub](https://github.com/rvanbruggen/educaition).
+## Vragen of opmerkingen?
+
+Dit project is werk in uitvoering en feedback is welkom. Zo werkt het:
+
+- **Een vraag of opmerking** over de inhoud? Open een
+  [issue op GitHub](https://github.com/rvanbruggen/educaition/issues).
+- **Een concrete verbetering** — een correctie, een nieuwe bron of een extra
+  discussievraag? Dien een [pull request](https://github.com/rvanbruggen/educaition/pulls)
+  in, met bronvermelding.
