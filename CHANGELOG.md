@@ -3,6 +3,13 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.4.1 — 2026-08-19
+
+- Mobiel: hamburgermenu in de header (CSS-only, werkt zonder JavaScript) —
+  navigatie en zoekbalk klappen open/dicht op schermen tot 768px
+- Verkennen: "Alle digests"-optie in de Type-filter (matcht Vlaamse én
+  internationale digests)
+
 ## 0.4.0 — 2026-08-19
 
 - Homepage: gebruikt nu 90% van de schermbreedte (header en footer ook)
