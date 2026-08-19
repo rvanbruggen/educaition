@@ -10,18 +10,32 @@ antwoorden — wel de belangrijkste standpunten, telkens met bron, zodat je zelf
 oordelen. Suggesties voor nieuwe discussievragen zijn welkom via
 <a href="https://github.com/rvanbruggen/educaition">GitHub</a>.</p>
 
+<ol class="discussie-index">
+  {% for d in site.data.discussies %}
+  <li><a href="#{{ d.slug }}">{{ d.vraag }}</a></li>
+  {% endfor %}
+</ol>
+
 {% for d in site.data.discussies %}
 <section class="discussie" id="{{ d.slug }}">
-  <h2>{{ d.vraag }}</h2>
-  <p class="context">{{ d.context }}</p>
-  <div class="standpunten">
-    {% for s in d.standpunten %}
-    <div class="standpunt">
-      <h3>{{ s.richting }}</h3>
-      <p>{{ s.samenvatting }}</p>
-      <p class="bronnen"><a href="{{ s.bron_url }}" rel="noopener">{{ s.bron_naam }}</a></p>
+  <header class="discussie-kop">
+    <span class="discussie-nummer">{{ forloop.index }}</span>
+    <div>
+      <h2>{{ d.vraag }}</h2>
+      <p class="context">{{ d.context }}</p>
     </div>
-    {% endfor %}
+  </header>
+  <div class="standpunten-blok">
+    <p class="standpunten-label">De standpunten in dit debat</p>
+    <div class="standpunten">
+      {% for s in d.standpunten %}
+      <div class="standpunt">
+        <h3>{{ s.richting }}</h3>
+        <p>{{ s.samenvatting }}</p>
+        <p class="bronnen"><a href="{{ s.bron_url }}" rel="noopener">{{ s.bron_naam }}</a></p>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </section>
 {% endfor %}
