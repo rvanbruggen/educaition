@@ -30,11 +30,9 @@ h1, h2, h3 {
   letter-spacing: -0.01em;
 }
 h1 { font-size: 2rem; }
-main { max-width: 780px; margin: 0 auto; padding: 1.8rem 1rem 3rem; }
+/* alle pagina's gebruiken 90% van de schermbreedte */
+main { width: 90%; max-width: none; margin: 0 auto; padding: 1.8rem 0 3rem; }
 a { color: var(--accent); }
-
-/* homepage gebruikt 90% van de schermbreedte */
-body.home main { max-width: none; width: 90%; }
 
 /* ---- header ---- */
 .site-header {

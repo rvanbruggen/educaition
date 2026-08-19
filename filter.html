@@ -45,6 +45,7 @@ permalink: /filter/
   <div>
     <label for="f-type">Type</label>
     <select id="f-type"><option value="">Alle</option>
+      <option value="digest*">Alle digests</option>
       {% for t in site.data.tags.type %}<option value="{{ t.slug }}">{{ t.naam }}</option>{% endfor %}
     </select>
   </div>
@@ -71,6 +72,14 @@ permalink: /filter/
       var v = s.el.value;
       if (!v) return true;
       var field = item[s.facet];
+      // waarde met '*' = prefix-match (bv. 'digest*' matcht digest én digest-internationaal)
+      if (v.slice(-1) === '*') {
+        var prefix = v.slice(0, -1);
+        if (Array.isArray(field)) {
+          return field.some(function (f) { return f.indexOf(prefix) === 0; });
+        }
+        return typeof field === 'string' && field.indexOf(prefix) === 0;
+      }
       if (Array.isArray(field)) return field.indexOf(v) !== -1;
       return field === v;
     });
