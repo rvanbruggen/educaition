@@ -1,6 +1,6 @@
 ---
 title: "Halfjaardigest Vlaanderen: AI en onderwijs, januari-augustus 2026"
-date: 2026-08-19
+date: 2026-08-16
 niveau: [basisonderwijs, secundair-onderwijs, hoger-onderwijs]
 vak: [vakoverschrijdend]
 thema: [beleid-en-regelgeving, evaluatie-en-fraude, onderzoek-en-evidentie, ai-geletterdheid]
