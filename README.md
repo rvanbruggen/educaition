@@ -48,6 +48,13 @@ bron: https://...
 
 Gebruik alleen slugs die in `_data/tags.yml` staan.
 
+**Interne links in artikels:** gebruik altijd
+`[tekst]({{ site.baseurl }}{% post_url JJJJ-MM-DD-titel %})` — dus mét
+`{{ site.baseurl }}` ervoor. GitHub Pages draait Jekyll 3.x, waar `post_url` de
+baseurl (`/educaition`) níét zelf toevoegt; zonder prefix breekt de link.
+De GitHub Action `check-links.yml` bouwt de site bij elke push en faalt op
+kapotte interne links, zodat dit niet meer onopgemerkt live kan gaan.
+
 ## Lokaal draaien
 
 ```bash

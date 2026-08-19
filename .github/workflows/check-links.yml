@@ -1,0 +1,35 @@
+# Bouwt de site en controleert alle interne links bij elke push en pull request.
+# Faalt de check, dan staat er ergens een kapotte interne link (bv. een link
+# zonder baseurl-prefix) — fix die vóór je merget.
+name: Controleer site en interne links
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+
+jobs:
+  build-and-check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: "3.3"
+
+      - name: Installeer dependencies
+        run: |
+          bundle install
+          gem install html-proofer
+
+      - name: Bouw de site
+        run: bundle exec jekyll build
+
+      - name: Controleer interne links
+        run: |
+          htmlproofer ./_site \
+            --disable-external \
+            --swap-urls '^/educaition/:/' \
+            --no-enforce-https \
+            --ignore-missing-alt
