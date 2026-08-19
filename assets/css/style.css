@@ -57,4 +57,13 @@ a { color: var(--accent); }
 .filters select { width: 100%; padding: .4rem; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
 #resultaat-teller { color: var(--muted); font-size: .9rem; }
 
+.faq-nav { margin: 1rem 0; color: var(--muted); }
+details {
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: .7rem 1rem; margin: .6rem 0; background: #fafbfc;
+}
+details summary { cursor: pointer; font-weight: 600; }
+details[open] { background: #fff; }
+.bronnen { font-size: .85rem; color: var(--muted); }
+
 .site-footer { max-width: 760px; margin: 0 auto; padding: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
