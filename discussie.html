@@ -1,0 +1,27 @@
+---
+layout: default
+title: Ter discussie
+permalink: /discussie/
+---
+<h1>Ter discussie</h1>
+<p>Niet alles rond AI en onderwijs is al beslecht. Op deze pagina verzamelen we de open
+vragen die verder onderzoek en debat verdienen. We geven bewust <strong>geen</strong>
+antwoorden — wel de belangrijkste standpunten, telkens met bron, zodat je zelf kunt
+oordelen. Suggesties voor nieuwe discussievragen zijn welkom via
+<a href="https://github.com/rvanbruggen/educaition">GitHub</a>.</p>
+
+{% for d in site.data.discussies %}
+<section class="discussie" id="{{ d.slug }}">
+  <h2>{{ d.vraag }}</h2>
+  <p class="context">{{ d.context }}</p>
+  <div class="standpunten">
+    {% for s in d.standpunten %}
+    <div class="standpunt">
+      <h3>{{ s.richting }}</h3>
+      <p>{{ s.samenvatting }}</p>
+      <p class="bronnen"><a href="{{ s.bron_url }}" rel="noopener">{{ s.bron_naam }}</a></p>
+    </div>
+    {% endfor %}
+  </div>
+</section>
+{% endfor %}

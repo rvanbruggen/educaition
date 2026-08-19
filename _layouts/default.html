@@ -4,17 +4,25 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   {% seo %}
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+  <link rel="icon" type="image/svg+xml" href="{{ '/assets/img/logo.svg' | relative_url }}">
   {% feed_meta %}
 </head>
 <body>
   <header class="site-header">
-    <a class="site-title" href="{{ '/' | relative_url }}">Educ<span class="ai">AI</span>tion</a>
+    <a class="site-brand" href="{{ '/' | relative_url }}">
+      <img src="{{ '/assets/img/logo.svg' | relative_url }}" alt="" class="logo" width="44" height="44">
+      <span class="site-title">Educ<span class="ai">AI</span>tion</span>
+    </a>
     <nav>
       <a href="{{ '/' | relative_url }}">Home</a>
       <a href="{{ '/filter/' | relative_url }}">Verkennen</a>
       <a href="{{ '/digest/' | relative_url }}">Digest</a>
       <a href="{{ '/faq/' | relative_url }}">FAQ</a>
+      <a href="{{ '/discussie/' | relative_url }}">Ter discussie</a>
       <a href="{{ '/over/' | relative_url }}">Over</a>
     </nav>
   </header>
@@ -24,6 +32,9 @@
   <footer class="site-footer">
     <p>EducAItion — AI en onderwijs in Vlaanderen. Informatief, geen juridisch advies.
        <a href="{{ '/feed.xml' | relative_url }}">RSS</a></p>
+    <p class="versie">v{{ site.version }} · laatst bijgewerkt op
+       {{ site.time | date: "%-d %B %Y" }} om {{ site.time | date: "%H:%M" }}
+       · <a href="https://github.com/rvanbruggen/educaition/blob/main/CHANGELOG.md">changelog</a></p>
   </footer>
 </body>
 </html>

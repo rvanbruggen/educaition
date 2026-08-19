@@ -1,0 +1,139 @@
+# EducAItion — open discussievragen
+# Bewust zonder antwoorden: per vraag alleen context en standpunten met bron.
+
+- slug: cognitieve-schuld
+  vraag: "Maakt AI-gebruik lerenden cognitief luier — of net effectiever?"
+  context: >-
+    Onderzoek naar het effect van AI-assistenten op leren en denken staat nog in de
+    kinderschoenen en de resultaten wijzen in verschillende richtingen.
+  standpunten:
+    - richting: "AI verzwakt het leerproces"
+      samenvatting: >-
+        Een MIT Media Lab-studie (EEG, 54 deelnemers) vond bij ChatGPT-gebruikers de
+        zwakste hersenconnectiviteit, minder gevoel van eigenaarschap en moeite om uit
+        eigen werk te citeren — de onderzoekers spreken van "cognitive debt".
+      bron_naam: "MIT Media Lab — Your Brain on ChatGPT (preprint)"
+      bron_url: https://arxiv.org/abs/2506.08872
+    - richting: "Voorzichtig met die conclusie"
+      samenvatting: >-
+        Critici wijzen op de kleine steekproef (18 in de slotsessie), het ontbreken van
+        peer review en de beperkte generaliseerbaarheid naar ander AI-gebruik dan
+        essay-schrijven.
+      bron_naam: "The Decoder — kanttekeningen bij de MIT-studie"
+      bron_url: https://the-decoder.com/mit-study-shows-cognitive-debt-through-chatgpt-heres-what-it-means-in-real-world-practice/
+    - richting: "Goed ingezette AI versterkt leren"
+      samenvatting: >-
+        Een gerandomiseerde Harvard-studie (Kestin e.a., Scientific Reports 2025) vond
+        dat studenten met een op maat gebouwde AI-tutor meer dan dubbel zoveel leerden
+        in minder tijd dan in een actieve les.
+      bron_naam: "Overzicht van vijf AI-tutoringstudies (LessWrong)"
+      bron_url: https://www.lesswrong.com/posts/bs3yj8vLDKNnoa95m/five-recent-ai-tutoring-studies
+
+- slug: ai-tutoren
+  vraag: "Zijn AI-tutoren een doorbraak voor leerwinst — of een overschatte belofte?"
+  context: >-
+    Vroege studies tonen opvallend grote effecten, maar de vraag is of die
+    generaliseren naar gewone klassen en langere periodes.
+  standpunten:
+    - richting: "Doorbraak"
+      samenvatting: >-
+        Een World Bank-pilot in Nigeria (800 leerlingen, zes weken Copilot-ondersteunde
+        naschoolse lessen) vond leerwinst gelijk aan 1,5 à 2 jaar regulier onderwijs en
+        rekent het programma bij de meest kosteneffectieve ooit rigoureus getest.
+      bron_naam: "World Bank — From Chalkboards to Chatbots"
+      bron_url: https://documents.worldbank.org/en/publication/documents-reports/documentdetail/099548105192529324
+    - richting: "Overschatte belofte"
+      samenvatting: >-
+        Sceptici merken op dat pilots met extra begeleiding en nieuwigheidseffect
+        weinig zeggen over duurzame inzet, en dat onduidelijk is wat scholen precies
+        'kopen' wanneer ze een AI-tutor aanschaffen.
+      bron_naam: "Nick Potkalitsky — What Are We Buying When We Buy an AI Tutor?"
+      bron_url: https://nickpotkalitsky.substack.com/p/what-are-we-buying-when-we-buy-an
+    - richting: "Nuance uit de Global South"
+      samenvatting: >-
+        De Wereldbank zelf benadrukt vijf lessen voor mensgerichte inzet: AI werkt als
+        aanvulling op leraren, niet als vervanging, en context bepaalt het effect.
+      bron_naam: "World Bank blog — People-centered AI in education"
+      bron_url: https://blogs.worldbank.org/en/education/people-centered-ai-in-education--five-lessons-from-the-global-so
+
+- slug: toetsing
+  vraag: "Moeten examens terug naar pen, papier en mondeling?"
+  context: >-
+    Nu studenten massaal AI gebruiken voor opdrachten, herbekijken instellingen hun
+    toetsvormen. Terug naar traditioneel, of net vooruit naar iets nieuws?
+  standpunten:
+    - richting: "Terug naar traditionele toetsvormen"
+      samenvatting: >-
+        Handgeschreven en mondelinge examens beschermen het auteurschap en tonen of een
+        student de stof echt beheerst; steeds meer docenten grijpen ernaar terug omdat
+        AI-gebruik in opdrachten niet betrouwbaar detecteerbaar is.
+      bron_naam: "Scientias — studenten gebruiken AI massaal"
+      bron_url: https://scientias.nl/universiteiten-kunnen-er-niet-meer-omheen-studenten-gebruiken-ai-massaal-voor-het-invullen-van-opdrachten/
+    - richting: "Liever alternatieven dan terugval"
+      samenvatting: >-
+        Traditionele toetsen meten vooral geheugen en schrijfsnelheid onder tijdsdruk,
+        zijn arbeidsintensief en benadelen studenten met spreekangst; kies per leerdoel
+        en verbied AI niet waar het leerdoel net digitale verwerking omvat.
+      bron_naam: "Wilfred Rubens — Kies liever voor alternatieven"
+      bron_url: https://te-learning.nl/terugvallen-op-traditionele-toetsvormen-vanwege-de-opkomst-van-ai-kies-liever-voor-alternatieven/
+    - richting: "Herdenk het examen zelf"
+      samenvatting: >-
+        Nu taalmodellen beter redeneren dan topstudenten is de fundamentelere vraag wat
+        we eigenlijk willen meten — tijd voor een ander soort examen in plaats van een
+        strijd tegen de technologie.
+      bron_naam: "De Correspondent — Tijd voor een ander soort examen"
+      bron_url: https://decorrespondent.nl/16758/ai-taalmodellen-redeneren-inmiddels-beter-dan-de-beste-studenten-tijd-voor-een-ander-soort-examen/f806aadd-dba4-0d3b-390c-074f4993e094
+
+- slug: kansengelijkheid
+  vraag: "Verkleint AI de kansenongelijkheid — of vergroot ze die?"
+  context: >-
+    AI kan gepersonaliseerd leren democratiseren, maar toegang, betaalmuren en
+    algoritmische bias trekken in de andere richting.
+  standpunten:
+    - richting: "AI vergroot de kloof"
+      samenvatting: >-
+        Onderzoek toont dat digitalisering bestaande ongelijkheid versterkt via
+        thuissituatie en ondersteuning; betaalde AI-accounts geven wie het kan betalen
+        een voorsprong, en algoritmes kunnen ongelijkheid reproduceren.
+      bron_naam: "Universiteit Utrecht — digitalisering versterkt kansenongelijkheid"
+      bron_url: https://www.uu.nl/in-de-media/digitalisering-van-het-onderwijs-versterkt-kansenongelijkheid-tussen-leerlingen
+    - richting: "AI kan de kloof verkleinen"
+      samenvatting: >-
+        Gepersonaliseerd leren en gratis toegang tot hoogwaardige uitleg kunnen juist
+        leerlingen zonder privéles of hooggeschoolde ouders vooruithelpen; de
+        Nigeria-pilot vond de grootste winst bij meisjes.
+      bron_naam: "ICTworks — GenAI advances learning outcomes"
+      bron_url: https://www.ictworks.org/genai-advance-learning-outcomes/
+    - richting: "Risico op discriminatie vraagt kaders"
+      samenvatting: >-
+        Sectororganisaties waarschuwen voor een reëel risico op discriminatie door
+        AI-systemen in het onderwijs en vragen meer kennis en toezicht vóór brede inzet.
+      bron_naam: "VO-raad — reëel risico op discriminatie"
+      bron_url: https://www.vo-raad.nl/nieuws/meer-kennis-over-ai-in-onderwijs-nodig-reeel-risico-op-discriminatie
+    - richting: "Beleid moet gelijkheid centraal zetten"
+      samenvatting: >-
+        Kennisorganisaties pleiten ervoor kansengelijkheid expliciet mee te nemen in
+        elke digitaliseringsbeslissing, in plaats van ze als bijzaak te behandelen.
+      bron_naam: "Kennisnet — geef kansengelijkheid meer aandacht"
+      bron_url: https://www.kennisnet.nl/beleid-en-organisatie/geef-kansengelijkheid-bij-digitalisering-in-het-onderwijs-meer-aandacht/
+
+- slug: ai-nakijken
+  vraag: "Mag een leerkracht met AI verbeteren en feedback geven?"
+  context: >-
+    AI-ondersteund nakijken kan uren besparen, maar raakt aan de kern van het vak:
+    wie beoordeelt er eigenlijk, en wat gebeurt er met het leerlingenwerk?
+  standpunten:
+    - richting: "Slimme tijdsbesparing"
+      samenvatting: >-
+        Docenten die met AI nakijken winnen tijd voor lesvoorbereiding en persoonlijke
+        begeleiding, en AI kan consistentere eerste-lijnsfeedback geven op grote
+        stapels werk.
+      bron_naam: "NOS — Docenten kijken na met AI"
+      bron_url: https://nos.nl/artikel/2609282-docenten-kijken-na-met-ai-slimme-tijdsbesparing-of-risicovol
+    - richting: "Risicovol"
+      samenvatting: >-
+        Leerlingenwerk is persoonsgegeven (AVG), AI-oordelen kunnen bias bevatten, en
+        onder de AI Act geldt AI die leerresultaten evalueert als hoog risico — de
+        eindverantwoordelijkheid moet aantoonbaar bij de leerkracht blijven.
+      bron_naam: "Kennisnet — wetgeving rond AI en het onderwijs"
+      bron_url: https://www.kennisnet.nl/artificial-intelligence/wetgeving-rond-ai-en-het-onderwijs/

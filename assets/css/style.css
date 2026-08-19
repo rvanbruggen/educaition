@@ -1,69 +1,132 @@
 :root {
-  --ink: #1a2333;
-  --muted: #5b6575;
-  --accent: #0b5fff;
-  --accent-soft: #e8f0ff;
-  --bg: #ffffff;
-  --line: #e4e8ee;
-  --niveau: #0b5fff;
+  --ink: #232946;
+  --muted: #5f6577;
+  --accent: #4f46e5;
+  --accent-2: #a855f7;
+  --accent-soft: #eef0ff;
+  --amber: #b45309;
+  --amber-soft: #fdf3e3;
+  --bg: #fbf9f4;          /* warm papier */
+  --card: #ffffff;
+  --line: #e7e3d8;
+  --niveau: #4f46e5;
   --vak: #0a8754;
-  --thema: #b34700;
-  --regio: #6b21a8;
-  --type: #475569;
+  --thema: #b45309;
+  --regio: #7c3aed;
+  --type: #52607a;
 }
 
 * { box-sizing: border-box; }
 body {
   margin: 0;
-  font-family: -apple-system, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+  font-family: "Inter", -apple-system, "Segoe UI", Roboto, sans-serif;
   color: var(--ink);
   background: var(--bg);
-  line-height: 1.6;
+  line-height: 1.65;
 }
-main { max-width: 760px; margin: 0 auto; padding: 1.5rem 1rem 3rem; }
+h1, h2, h3 {
+  font-family: "Fraunces", Georgia, serif;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: 2rem; }
+main { max-width: 780px; margin: 0 auto; padding: 1.8rem 1rem 3rem; }
 a { color: var(--accent); }
 
+/* ---- header ---- */
 .site-header {
-  display: flex; flex-wrap: wrap; align-items: baseline; gap: 1rem;
-  max-width: 760px; margin: 0 auto; padding: 1.2rem 1rem;
-  border-bottom: 1px solid var(--line);
+  display: flex; flex-wrap: wrap; align-items: center; gap: 1rem;
+  max-width: 780px; margin: 0 auto; padding: 1rem;
+  border-bottom: 2px solid var(--ink);
 }
-.site-title { font-size: 1.5rem; font-weight: 700; text-decoration: none; color: var(--ink); }
-.site-title .ai { color: var(--accent); }
-.site-header nav { margin-left: auto; display: flex; gap: 1rem; }
-.site-header nav a { text-decoration: none; color: var(--muted); }
-.site-header nav a:hover { color: var(--accent); }
+.site-brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; }
+.logo { display: block; }
+.site-title {
+  font-family: "Fraunces", Georgia, serif;
+  font-size: 1.6rem; font-weight: 700; color: var(--ink);
+}
+.site-title .ai {
+  background: linear-gradient(120deg, var(--accent), var(--accent-2));
+  -webkit-background-clip: text; background-clip: text; color: transparent;
+}
+.site-header nav { margin-left: auto; display: flex; flex-wrap: wrap; gap: .9rem; }
+.site-header nav a {
+  text-decoration: none; color: var(--muted); font-size: .95rem; font-weight: 600;
+  padding: .15rem .1rem; border-bottom: 2px solid transparent;
+}
+.site-header nav a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 .meta { color: var(--muted); font-size: .9rem; }
 
+/* ---- badges ---- */
 .badges { display: flex; flex-wrap: wrap; gap: .4rem; margin: .4rem 0 1rem; }
 .badge {
-  font-size: .72rem; padding: .15rem .55rem; border-radius: 999px;
-  background: var(--accent-soft); color: var(--accent); white-space: nowrap;
+  font-size: .72rem; font-weight: 600; padding: .18rem .6rem; border-radius: 999px;
+  background: var(--accent-soft); color: var(--niveau); white-space: nowrap;
 }
 .badge-vak { background: #e6f6ef; color: var(--vak); }
-.badge-thema { background: #fdeee2; color: var(--thema); }
+.badge-thema { background: var(--amber-soft); color: var(--thema); }
 .badge-regio { background: #f3e8ff; color: var(--regio); }
 .badge-type { background: #eef1f5; color: var(--type); }
 
+/* ---- lijsten als kaarten ---- */
 .post-list { list-style: none; padding: 0; }
-.post-list li { padding: 1rem 0; border-bottom: 1px solid var(--line); }
+.post-list li {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 1.1rem 1.3rem; margin: 1rem 0;
+  box-shadow: 0 1px 3px rgba(35, 41, 70, .06);
+  transition: box-shadow .15s ease, transform .15s ease;
+}
+.post-list li:hover { box-shadow: 0 4px 14px rgba(35, 41, 70, .10); transform: translateY(-1px); }
 .post-list h3 { margin: 0 0 .2rem; }
 .post-list h3 a { text-decoration: none; color: var(--ink); }
 .post-list h3 a:hover { color: var(--accent); }
 
+/* ---- artikel ---- */
+.post, .page {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 1.6rem 1.8rem;
+}
+
+/* ---- filters ---- */
 .filters { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: .8rem; margin: 1rem 0 1.5rem; }
-.filters label { display: block; font-size: .8rem; color: var(--muted); margin-bottom: .2rem; }
-.filters select { width: 100%; padding: .4rem; border: 1px solid var(--line); border-radius: 6px; background: #fff; }
+.filters label { display: block; font-size: .8rem; font-weight: 600; color: var(--muted); margin-bottom: .2rem; }
+.filters select {
+  width: 100%; padding: .45rem; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--card); color: var(--ink);
+}
 #resultaat-teller { color: var(--muted); font-size: .9rem; }
 
+/* ---- FAQ ---- */
 .faq-nav { margin: 1rem 0; color: var(--muted); }
 details {
-  border: 1px solid var(--line); border-radius: 8px;
-  padding: .7rem 1rem; margin: .6rem 0; background: #fafbfc;
+  border: 1px solid var(--line); border-radius: 12px;
+  padding: .8rem 1.1rem; margin: .7rem 0; background: var(--card);
 }
 details summary { cursor: pointer; font-weight: 600; }
-details[open] { background: #fff; }
+details[open] { box-shadow: 0 2px 8px rgba(35, 41, 70, .08); }
 .bronnen { font-size: .85rem; color: var(--muted); }
 
-.site-footer { max-width: 760px; margin: 0 auto; padding: 1rem; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+/* ---- Ter discussie ---- */
+.discussie {
+  background: var(--card); border: 1px solid var(--line); border-radius: 12px;
+  padding: 1.2rem 1.4rem; margin: 1.4rem 0;
+}
+.discussie h2 { margin-top: 0; }
+.discussie .context { color: var(--muted); font-style: italic; }
+.standpunten { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: .9rem; margin-top: .8rem; }
+.standpunt {
+  border: 1px solid var(--line); border-left: 4px solid var(--accent);
+  border-radius: 8px; padding: .7rem .9rem; background: var(--bg);
+}
+.standpunt:nth-child(2n) { border-left-color: var(--amber); }
+.standpunt:nth-child(3n) { border-left-color: var(--accent-2); }
+.standpunt h3 { margin: 0 0 .3rem; font-size: 1rem; }
+.standpunt p { margin: .3rem 0; font-size: .93rem; }
+
+/* ---- footer ---- */
+.site-footer {
+  max-width: 780px; margin: 0 auto; padding: 1.2rem 1rem 2rem;
+  border-top: 2px solid var(--ink); color: var(--muted); font-size: .85rem;
+}
+.site-footer .versie { font-size: .78rem; opacity: .85; }
