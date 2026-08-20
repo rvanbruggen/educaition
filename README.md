@@ -3,14 +3,14 @@
 AI en onderwijs in Vlaanderen — nieuws, best practices en regelgeving, wekelijks
 samengevat en doorzoekbaar per niveau, vak, thema en regio.
 
-**Live site:** [https://rvanbruggen.github.io/educaition/](https://rvanbruggen.github.io/educaition/)
-*(we onderzoeken momenteel hoe we hier een eigen domeinnaam op kunnen zetten)*
+**Live site:** [https://www.educaition.today](https://www.educaition.today)
+*(voorheen [https://rvanbruggen.github.io/educaition/](https://rvanbruggen.github.io/educaition/); sinds v0.4.2 draait de site op het eigen domein, `url`/`baseurl` in `_config.yml` zijn hierop aangepast)*
 
 Statische site, gebouwd met Jekyll en gehost op GitHub Pages. Geen backend, geen database.
 
 ## Vragen, opmerkingen of suggesties
 
-Zoals vermeld op de [Over-pagina](https://rvanbruggen.github.io/educaition/over/) verloopt
+Zoals vermeld op de [Over-pagina](https://www.educaition.today/over/) verloopt
 feedback via GitHub:
 
 - **Vragen of opmerkingen** over de inhoud van de site: open een
@@ -50,8 +50,9 @@ Gebruik alleen slugs die in `_data/tags.yml` staan.
 
 **Interne links in artikels:** gebruik altijd
 `[tekst]({{ site.baseurl }}{% post_url JJJJ-MM-DD-titel %})` — dus mét
-`{{ site.baseurl }}` ervoor. GitHub Pages draait Jekyll 3.x, waar `post_url` de
-baseurl (`/educaition`) níét zelf toevoegt; zonder prefix breekt de link.
+`{{ site.baseurl }}` ervoor. Sinds v0.4.2 (eigen domein) staat `baseurl` leeg
+in `_config.yml`, dus de prefix lost op naar niets — maar de link blijft
+correct en toekomstbestendig als `baseurl` ooit weer een waarde krijgt.
 De GitHub Action `check-links.yml` bouwt de site bij elke push en faalt op
 kapotte interne links, zodat dit niet meer onopgemerkt live kan gaan.
 
