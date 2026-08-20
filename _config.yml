@@ -5,8 +5,8 @@ description: >-
 lang: nl
 timezone: Europe/Brussels
 version: "0.4.1"
-url: "https://rvanbruggen.github.io"
-baseurl: "/educaition"
+url: "https://www.educaition.today"
+baseurl: ""
 
 # GitHub Pages-veilige plugins (whitelist)
 plugins:
