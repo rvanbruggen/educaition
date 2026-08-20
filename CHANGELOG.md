@@ -3,6 +3,14 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.4.2 — 2026-08-20
+
+- Fix: `url`/`baseurl` in `_config.yml` stonden nog op de oude GitHub Pages
+  project-URL (`rvanbruggen.github.io/educaition`) i.p.v. het eigen domein —
+  alle interne links, afbeeldingen en de canonical/OG-tags gaven 404's op
+  `www.educaition.today`
+- `url` staat nu op `https://www.educaition.today`, `baseurl` is leeg
+
 ## 0.4.1 — 2026-08-19
 
 - Mobiel: hamburgermenu in de header (CSS-only, werkt zonder JavaScript) —
