@@ -13,8 +13,10 @@ ICT-coördinatoren en ouders.
 
 **Wat mag je verwachten?**
 
-- Een wekelijkse digest in het Nederlands
+- Elke week het nieuws samengevat in het Nederlands ("Samengevat")
 - Een doorzoekbare, gefilterde bibliotheek van artikels en bronnen
+- Een academische hoek met Nederlandstalige samenvattingen van wetenschappelijk onderzoek
+- Een mediahoek met podcasts en vodcasts over AI in het onderwijs
 - Duiding bij regelgeving (AI Act, eindtermen, evaluatie en fraude) — informatief, geen juridisch advies
 
 ## Vragen of opmerkingen?

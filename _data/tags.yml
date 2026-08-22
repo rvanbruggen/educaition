@@ -90,8 +90,8 @@ regio:
 
 type:
   - {slug: nieuws, naam: Nieuws}
-  - {slug: digest, naam: Wekelijkse digest (Vlaanderen)}
-  - {slug: digest-internationaal, naam: Wekelijkse digest (internationaal)}
+  - {slug: digest, naam: Samengevat (Vlaanderen)}
+  - {slug: digest-internationaal, naam: Samengevat (internationaal)}
   - {slug: gids-handleiding, naam: Gids / handleiding}
   - {slug: best-practice, naam: Best practice}
   - {slug: casestudy, naam: Casestudy}
@@ -99,6 +99,8 @@ type:
   - {slug: beleidsdocument, naam: Beleidsdocument}
   - {slug: tool-review, naam: Tool review}
   - {slug: opinie, naam: Opinie}
+  - {slug: academische-publicatie, naam: Academische publicatie}
+  - {slug: podcast-vodcast, naam: "Podcast / vodcast"}
 
 doelgroep:
   - {slug: leerkracht, naam: Leerkracht}

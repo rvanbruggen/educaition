@@ -1,0 +1,41 @@
+---
+layout: default
+title: Mediahoek
+permalink: /media/
+---
+<h1>Mediahoek</h1>
+<p>Podcasts en vodcasts over AI in het onderwijs. We selecteren en beschrijven ze in het
+Nederlands; de shows zelf zijn Nederlandstalig of internationaal.</p>
+
+<h2>Nederlandstalig</h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.type == "podcast-vodcast" %}{% unless post.regio contains "internationaal" %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+      {% include tag-badges.html item=post %}
+      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+    </li>
+    {% endunless %}{% endif %}
+  {% endfor %}
+</ul>
+
+<h2>Internationaal</h2>
+<ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.type == "podcast-vodcast" %}{% if post.regio contains "internationaal" %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+      {% include tag-badges.html item=post %}
+      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+    </li>
+    {% endif %}{% endif %}
+  {% endfor %}
+</ul>
+
+<p><em>Hoe we deze hoek vullen: we volgen de RSS-feeds van een vaste lijst shows en scannen
+daarnaast podcasttranscripties op relevante trefwoorden. Ken je een podcast — zeker een
+Vlaamse! — die hier thuishoort?
+<a href="{{ '/over/' | relative_url }}">Laat het ons weten</a>.</em></p>

@@ -3,6 +3,21 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.5.0 — 2026-08-22
+
+- Nieuwe sectie "Academische hoek" (`/academisch/`): Nederlandstalige samenvattingen
+  van wetenschappelijk onderzoek over AI in het onderwijs (nieuw posttype
+  `academische-publicatie`), met zes startpublicaties
+- Nieuwe sectie "Mediahoek" (`/media/`): podcasts en vodcasts over AI in het
+  onderwijs, Nederlandstalig en internationaal (nieuw posttype `podcast-vodcast`),
+  met tien startitems
+- "Digest" heet overal op de site voortaan "Samengevat" (nav, homepage, pagina- en
+  filterlabels); URL's en tag-slugs blijven ongewijzigd, dus geen gebroken links
+- Homepage: academische en mediaposts verschijnen niet in de artikellijst — ze
+  hebben hun eigen secties
+- Git: credential helper gebruikt nu een relatief pad, zodat pushes uit elke
+  sessie werken
+
 ## 0.4.2 — 2026-08-20
 
 - Fix: `url`/`baseurl` in `_config.yml` stonden nog op de oude GitHub Pages

@@ -1,0 +1,29 @@
+---
+layout: default
+title: Academische hoek
+permalink: /academisch/
+---
+<h1>Academische hoek</h1>
+<p>Wat zegt de wetenschap over AI in het onderwijs? Hier vatten we recent academisch
+onderzoek samen in het Nederlands — met telkens een link naar de originele (meestal
+Engelstalige) publicatie. We geven voorrang aan gerandomiseerde studies, meta-analyses
+en rapporten van grote instellingen, en Vlaams onderzoek krijgt altijd voorrang.</p>
+
+<ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.type == "academische-publicatie" %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+      {% include tag-badges.html item=post %}
+      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+    </li>
+    {% endif %}
+  {% endfor %}
+</ul>
+
+<p><em>Hoe we deze hoek vullen: we scannen wekelijks open databanken van wetenschappelijke
+publicaties — <a href="https://openalex.org">OpenAlex</a>, <a href="https://arxiv.org">arXiv</a>
+en <a href="https://www.semanticscholar.org">Semantic Scholar</a> — aangevuld met rapporten
+van OESO, UNESCO en de Europese Commissie. Suggesties?
+<a href="{{ '/over/' | relative_url }}">Laat het ons weten</a>.</em></p>

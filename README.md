@@ -24,9 +24,11 @@ feedback via GitHub:
 
 - `_config.yml` — sitesetup (GitHub Pages-veilige plugins: feed, seo-tag, sitemap)
 - `_data/tags.yml` — het gecontroleerde tagvocabularium (zes facetten: niveau, vak, thema, regio, type, doelgroep). Nieuwe tags alleen via dit bestand.
-- `_posts/` — alle artikels en digests, markdown met facet-front-matter
+- `_posts/` — alle artikels, samenvattingen, academische publicaties en media-items, markdown met facet-front-matter
 - `filter.html` + `search.json` — client-side facetfilter, geen server nodig
-- `digest.html` — overzicht van wekelijkse digests (posts met `type: digest`)
+- `digest.html` — "Samengevat": overzicht van wekelijkse samenvattingen (posts met `type: digest` of `digest-internationaal`; URL blijft `/digest/`)
+- `academisch.html` — Academische hoek (posts met `type: academische-publicatie`)
+- `media.html` — Mediahoek: podcasts en vodcasts (posts met `type: podcast-vodcast`)
 
 ## Nieuw artikel toevoegen
 

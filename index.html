@@ -12,7 +12,7 @@ in het onderwijs — gefilterd op niveau, vak, thema en regio. Voor leerkrachten
     <h2>Artikels</h2>
     <ul class="post-list">
       {% for post in site.posts %}
-        {% unless post.type == "digest" or post.type == "digest-internationaal" %}
+        {% unless post.type == "digest" or post.type == "digest-internationaal" or post.type == "academische-publicatie" or post.type == "podcast-vodcast" %}
         <li>
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
@@ -27,7 +27,7 @@ in het onderwijs — gefilterd op niveau, vak, thema en regio. Voor leerkrachten
 
   <aside class="kolom-digests">
     <div class="digest-paneel">
-      <h2>Wekelijkse digests</h2>
+      <h2>Samengevat</h2>
       <p class="digest-uitleg">Elke week samengevat: wat beweegt er in Vlaanderen, en wat
       betekent het internationale nieuws voor ons onderwijs.</p>
       <ul class="digest-lijst">
@@ -43,7 +43,7 @@ in het onderwijs — gefilterd op niveau, vak, thema en regio. Voor leerkrachten
           {% endif %}
         {% endfor %}
       </ul>
-      <p class="digest-alle"><a href="{{ '/digest/' | relative_url }}">Alle digests →</a></p>
+      <p class="digest-alle"><a href="{{ '/digest/' | relative_url }}">Alle samenvattingen →</a></p>
     </div>
   </aside>
 </div>

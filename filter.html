@@ -45,7 +45,7 @@ permalink: /filter/
   <div>
     <label for="f-type">Type</label>
     <select id="f-type"><option value="">Alle</option>
-      <option value="digest*">Alle digests</option>
+      <option value="digest*">Alle samenvattingen</option>
       {% for t in site.data.tags.type %}<option value="{{ t.slug }}">{{ t.naam }}</option>{% endfor %}
     </select>
   </div>
