@@ -7,6 +7,7 @@ thema: [tools-en-platformen, didactiek-en-lespraktijk]
 regio: [internationaal]
 type: podcast-vodcast
 doelgroep: [leerkracht, directie-en-beleid]
+youtube_id: J50HZsT3ND0
 ---
 
 De oprichter van Khan Academy spreekt regelmatig op video over gepersonaliseerd leren

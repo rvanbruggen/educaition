@@ -7,6 +7,7 @@ thema: [tools-en-platformen, didactiek-en-lespraktijk]
 regio: [internationaal]
 type: podcast-vodcast
 doelgroep: [leerkracht, directie-en-beleid]
+spotify_show: 2F2srBvTeYu9Xcg6K910ol
 ---
 
 Amerikaanse podcast met wekelijkse duiding bij AI-nieuws voor het onderwijs, gericht op

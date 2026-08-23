@@ -7,6 +7,7 @@ thema: [ai-geletterdheid, ethiek-en-maatschappij]
 regio: [vlaanderen]
 type: podcast-vodcast
 doelgroep: [leerkracht, lerende]
+spotify_show: 3DjVqCMG5NLrKVKcB02wsD
 ---
 
 Maandelijkse podcast van de Vlaamse AI Academie (VAIA, georganiseerd door KU Leuven)

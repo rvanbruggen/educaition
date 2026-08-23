@@ -7,6 +7,7 @@ thema: [onderzoek-en-evidentie, didactiek-en-lespraktijk]
 regio: [internationaal]
 type: podcast-vodcast
 doelgroep: [leerkracht, lerarenopleider]
+spotify_show: 5oOBPrlO68dNZXen9Kxg0e
 ---
 
 Britse podcast gepresenteerd door Rose Luckin, professor Learner-Centred Design aan

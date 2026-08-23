@@ -7,6 +7,7 @@ thema: [beleid-en-regelgeving, ai-geletterdheid]
 regio: [nederland]
 type: podcast-vodcast
 doelgroep: [leerkracht, directie-en-beleid]
+spotify_show: 2uiatSrhQQOkqcSilaQcoZ
 ---
 
 De podcast van Kennisnet, de Nederlandse publieke organisatie voor ICT in het onderwijs,

@@ -7,6 +7,7 @@ thema: [didactiek-en-lespraktijk, beleid-en-regelgeving]
 regio: [internationaal]
 type: podcast-vodcast
 doelgroep: [leerkracht, directie-en-beleid]
+spotify_show: 0iOsrYtoK3NDfbW6UgowbU
 ---
 
 Een van de langstlopende podcasts specifiek over AI in het onderwijs, met gesprekken
