@@ -28,6 +28,14 @@
         in minder tijd dan in een actieve les.
       bron_naam: "Overzicht van vijf AI-tutoringstudies (LessWrong)"
       bron_url: https://www.lesswrong.com/posts/bs3yj8vLDKNnoa95m/five-recent-ai-tutoring-studies
+    - richting: "Het ontwerp van de tool bepaalt het effect"
+      samenvatting: >-
+        Een gerandomiseerde PNAS-studie bij middelbare scholieren wiskunde vond dat
+        onbeperkte toegang tot een standaard GPT-4-chatbot de oefenprestaties
+        verbeterde, maar het leren schaadde zodra de AI werd weggenomen — terwijl een
+        AI-tutor mét didactische vangrails die schade grotendeels vermeed.
+      bron_naam: "PNAS — Generative AI without guardrails can harm learning"
+      bron_url: https://www.pnas.org/doi/10.1073/pnas.2422633122
 
 - slug: ai-tutoren
   vraag: "Zijn AI-tutoren een doorbraak voor leerwinst — of een overschatte belofte?"
