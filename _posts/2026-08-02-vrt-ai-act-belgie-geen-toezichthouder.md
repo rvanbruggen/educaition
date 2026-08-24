@@ -8,6 +8,7 @@ regio: [belgie-federaal]
 type: nieuws
 doelgroep: [directie-en-beleid, ict-coordinator]
 bron: https://www.vrt.be/vrtnws/nl/2026/07/29/geen-toezichthouder-wel-al-strengere-regels-hoe-ver-staat-belg/
+image: "https://images.vrt.be/vrtnws_share/2026/07/31/28d08c14-b40b-4025-aebd-a3c4d1c14f7a.jpg"
 ---
 
 Op 2 augustus 2026 ging de volgende fase van de Europese AI Act in, met onder meer een transparantieverplichting: bedrijven en organisaties moeten voortaan melden wanneer ze AI-gegenereerde beelden of chatbots inzetten. België heeft echter nog geen officieel aangestelde toezichthouder; het BIPT wordt de AI-waakhond, maar het parlement moet dat nog goedkeuren.

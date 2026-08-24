@@ -8,6 +8,7 @@ regio: [vlaanderen]
 type: nieuws
 doelgroep: [lerende, directie-en-beleid]
 bron: https://www.vrt.be/vrtnws/nl/2026/07/01/duizenden-studenten-leggen-morgen-ingangsgeneeskunde-af-met-pen/
+image: "https://images.vrt.be/vrtnws_share/2025/12/16/07433851-8fcf-422f-8275-4be86f53989f.jpg"
 ---
 
 Ongeveer 7.000 studenten leggen het Vlaamse toelatingsexamen arts en tandarts af met pen en papier in plaats van op computer. De procedure werd aangepast nadat vorig jaar deelnemers betrapt werden op fraude met ChatGPT tijdens het digitale ingangsexamen en vijf deelnemers uit de rangschikking werden gehaald. Met de papieren versie wil de examencommissie AI-fraude uitsluiten.

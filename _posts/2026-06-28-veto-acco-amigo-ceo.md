@@ -8,6 +8,7 @@ regio: [vlaanderen]
 type: nieuws
 doelgroep: [lerende]
 bron: https://www.veto.be/student/bart-de-prins-de-man-achter-ai-tool-amigo-wordt-nieuwe-ceo-van-acco/370896
+image: "https://image.veto.be/370915.jpg?imageId=370915&x=0&y=0&cropw=100&croph=84.87&panox=0&panoy=0&panow=100&panoh=84.87&width=1200&height=683"
 ---
 
 Bart De Prins, sinds 2012 verantwoordelijk voor innovatie en digitale transformatie bij studie-uitgeverij Acco, volgt vanaf 1 augustus 2026 Inge Vander Velpen op als CEO. De Prins stond mee aan de wieg van de AI-tool Amigo, die studenten helpt bij het samenvatten en instuderen van leerstof. Volgens De Prins wordt de impact van AI op de kenniseconomie enorm, maar blijven poortwachters nodig die bepalen welke informatie correct is.

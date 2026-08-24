@@ -8,6 +8,7 @@ regio: [vlaanderen]
 type: nieuws
 doelgroep: [leerkracht, directie-en-beleid]
 bron: https://www.vaia.be/nl/opleidingen/lets-connect-universitair-onderwijs-uitgedaagd-door-genai
+image: "https://www.vaia.be/files/Categorie-huisstijl/_1200x590_crop_center-center_none/hoger-onderwijs-en-onderzoek.jpg"
 ---
 
 Op 24 april 2026 organiseerden de vijf Vlaamse universiteiten samen met VLIR en de Vlaamse AI Academie (VAIA) in Brussel de interuniversitaire studiedag 'Let's connect: universitair onderwijs uitgedaagd door (Gen)AI'. Met een keynote van Mutlu Cukurova (UCL) over human-AI teaming, een panel over AI-skills die het werkveld verwacht en netwerktafels over onder meer masterproef, academisch schrijven en evaluatie. De presentaties zijn achteraf gepubliceerd.

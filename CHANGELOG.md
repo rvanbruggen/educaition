@@ -3,6 +3,17 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.6.0 — 2026-08-24
+
+- Homepage visueler: artikelkaarten tonen nu een thumbnail — het Open
+  Graph-beeld van het bronartikel, rechtstreeks gehotlinkt (geen kopieën in de
+  repo), lazy-loaded, zonder referrer, en met stille fallback als een beeld
+  ontbreekt of verdwijnt; 26 bestaande posts kregen een `image:`-veld en de
+  dagelijkse artikeltaak neemt het veld voortaan automatisch mee
+- Nieuw mediapaneel in de rechterkolom: de vier recentste podcast-/vodcastposts
+  met ingebedde Spotify-/YouTube-spelers, onder het digestpaneel
+- Digestpaneel niet langer sticky (er staan nu twee panelen in de kolom)
+
 ## 0.5.4 — 2026-08-24
 
 - Herpositionering: de site presenteert zich voortaan als "dé hub voor AI en

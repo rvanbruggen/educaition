@@ -8,6 +8,7 @@ regio: [vlaanderen]
 type: onderzoek
 doelgroep: [directie-en-beleid, leerkracht]
 bron: https://www.imec.be/nl/press/ai-gebruik-maakt-ongeziene-sprong-tot-bij-helft-van-de-vlamingen
+image: "https://www.imec.be/sites/default/files/2024-03/imec%20toren%20%20horizontaal.jpg"
 ---
 
 De 18de editie van de imec.digimeter toont dat generatieve AI in 2025 op kruissnelheid kwam: 43% van de Vlamingen is gewoontegebruiker, tegenover 18% in 2023. Bij studenten is het gebruik nog forser: 81% gebruikt generatieve AI actief voor school of studie en een derde zegt dat studeren zonder AI moeilijker zou zijn. Tegelijk groeit de bezorgdheid: 37% van de gebruikers geeft aan minder na te denken door AI, bij 18- tot 24-jarigen zelfs de helft.

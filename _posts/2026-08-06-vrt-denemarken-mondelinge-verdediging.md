@@ -8,6 +8,7 @@ regio: [internationaal]
 type: nieuws
 doelgroep: [leerkracht, directie-en-beleid]
 bron: https://www.vrt.be/vrtnws/nl/2026/08/06/denemarken-mondeling-verdedigen-examenopdrachten-ai/
+image: "https://images.vrt.be/vrtnws_share/2026/08/06/79b1d456-1f64-4a14-aa1d-c541d450d505.jpg"
 ---
 
 In Denemarken moeten studenten hun examenopdrachten voortaan ook mondeling verdedigen om spieken met artificiële intelligentie tegen te gaan. Daarnaast moeten ze meer opdrachten op school zelf maken en worden hun computerschermen beter gemonitord. De maatregel illustreert hoe onderwijssystemen hun evaluatievormen aanpassen aan AI-fraude.

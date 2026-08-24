@@ -8,6 +8,7 @@ regio: [vlaanderen]
 type: onderzoek
 doelgroep: [lerende, leerkracht, directie-en-beleid]
 bron: https://www.vrt.be/vrtnws/nl/2026/04/28/scholieren-en-ai/
+image: "https://images.vrt.be/vrtnws_share/2026/04/28/a3ec5cc9-afc7-464e-b709-e3e6d47c46e0.jpg"
 ---
 
 Volgens de eerste resultaten van de Grote Scholierenenquête 2026 van de Vlaamse Scholierenkoepel gebruikt de helft van de middelbare scholieren meermaals per week AI voor schoolwerk: 30 procent meerdere keren per week, 20 procent dagelijks of vaker. Slechts 8 procent zegt dat er op school geen afspraken over AI bestaan, maar 62 procent geeft aan dat de regels verschillen van leerkracht tot leerkracht. Scholieren vragen om AI correct te leren gebruiken in plaats van het te verbieden.
