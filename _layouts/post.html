@@ -8,6 +8,7 @@ layout: default
     {% if page.bron %} · <a href="{{ page.bron }}" rel="noopener">bron</a>{% endif %}
   </p>
   {% include tag-badges.html item=page %}
+  {% include embed-player.html item=page %}
   <div class="content">
     {{ content }}
   </div>

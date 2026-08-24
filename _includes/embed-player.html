@@ -1,0 +1,29 @@
+{% comment %}
+  Ingebedde speler voor Mediahoek-items.
+  Gebruik in front matter (één of meer):
+    spotify_show: <show-id>       — Spotify-showspeler
+    spotify_episode: <episode-id> — Spotify-afleveringsspeler
+    youtube_id: <video-id>        — YouTube-video (privacyvriendelijke nocookie-variant)
+  Aanroep: {% include embed-player.html item=post %} of item=page
+{% endcomment %}
+{% if include.item.spotify_show %}
+<div class="embed-audio">
+  <iframe src="https://open.spotify.com/embed/show/{{ include.item.spotify_show }}"
+          loading="lazy" allow="encrypted-media; fullscreen"
+          title="{{ include.item.title | escape }} — Spotify-speler"></iframe>
+</div>
+{% endif %}
+{% if include.item.spotify_episode %}
+<div class="embed-audio">
+  <iframe src="https://open.spotify.com/embed/episode/{{ include.item.spotify_episode }}"
+          loading="lazy" allow="encrypted-media; fullscreen"
+          title="{{ include.item.title | escape }} — Spotify-speler"></iframe>
+</div>
+{% endif %}
+{% if include.item.youtube_id %}
+<div class="embed-video">
+  <iframe src="https://www.youtube-nocookie.com/embed/{{ include.item.youtube_id }}"
+          loading="lazy" allow="encrypted-media; fullscreen; picture-in-picture" allowfullscreen
+          title="{{ include.item.title | escape }} — video"></iframe>
+</div>
+{% endif %}

@@ -16,6 +16,7 @@ Nederlands; de shows zelf zijn Nederlandstalig of internationaal.</p>
       <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
       {% include tag-badges.html item=post %}
       <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      {% include embed-player.html item=post %}
     </li>
     {% endunless %}{% endif %}
   {% endfor %}
@@ -30,6 +31,7 @@ Nederlands; de shows zelf zijn Nederlandstalig of internationaal.</p>
       <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
       {% include tag-badges.html item=post %}
       <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      {% include embed-player.html item=post %}
     </li>
     {% endif %}{% endif %}
   {% endfor %}
