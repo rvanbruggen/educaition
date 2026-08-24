@@ -146,7 +146,7 @@ permalink: /filter/
     history.replaceState(null, '', window.location.pathname + (qs ? '?' + qs : ''));
   }
 
-  fetch('{{ "/search.json" | relative_url }}')
+  fetch('{{ "/search.json" | relative_url }}?v={{ site.version }}')
     .then(function (r) { return r.json(); })
     .then(function (json) {
       data = json;

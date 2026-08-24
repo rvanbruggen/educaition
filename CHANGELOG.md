@@ -3,6 +3,12 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.6.5 — 2026-08-24
+
+- Fix: ook search.json wordt nu met een versieparameter geladen op de
+  artikelspagina, zodat zoekdata (incl. thumbnails) na een release niet uit een
+  verouderde browsercache komt
+
 ## 0.6.4 — 2026-08-24
 
 - Artikelspagina (/filter/): zoekresultaten tonen nu dezelfde OG-thumbnails als
