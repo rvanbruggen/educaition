@@ -15,7 +15,7 @@ het voor Vlaanderen betekent.</p>
     <li>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
-      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      <p>{% include eerste-zin.html item=post %}</p>
     </li>
     {% endif %}
   {% endfor %}
@@ -28,7 +28,7 @@ het voor Vlaanderen betekent.</p>
     <li>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
-      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      <p>{% include eerste-zin.html item=post %}</p>
     </li>
     {% endif %}
   {% endfor %}

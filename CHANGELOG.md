@@ -3,6 +3,13 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.6.6 — 2026-08-24
+
+- Volledige eerste zin als fragment nu ook op de artikels-, academisch-, media-
+  en digestpagina's — de logica staat in één gedeelde include
+  (`_includes/eerste-zin.html`), die ook de homepage en search.json gebruiken;
+  geen afgekapte halve zinnen meer waar dan ook
+
 ## 0.6.5 — 2026-08-24
 
 - Fix: ook search.json wordt nu met een versieparameter geladen op de

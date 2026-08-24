@@ -15,7 +15,7 @@ Nederlands; de shows zelf zijn Nederlandstalig of internationaal.</p>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
       {% include tag-badges.html item=post %}
-      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      <p>{% include eerste-zin.html item=post %}</p>
       {% include embed-player.html item=post %}
     </li>
     {% endunless %}{% endif %}
@@ -30,7 +30,7 @@ Nederlands; de shows zelf zijn Nederlandstalig of internationaal.</p>
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
       {% include tag-badges.html item=post %}
-      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      <p>{% include eerste-zin.html item=post %}</p>
       {% include embed-player.html item=post %}
     </li>
     {% endif %}{% endif %}

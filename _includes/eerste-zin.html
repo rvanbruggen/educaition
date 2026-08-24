@@ -1,0 +1,4 @@
+{% comment %}
+  Geeft de volledige eerste zin van een post-excerpt terug — geen afgekapte
+  woorden of halve zinnen. Aanroep: {% include eerste-zin.html item=post %}
+{% endcomment %}{% assign ez_zin = include.item.excerpt | strip_html | normalize_whitespace | split: ". " | first | strip %}{% assign ez_slot = ez_zin | slice: -1, 1 %}{{ ez_zin }}{% unless ez_slot == "." or ez_slot == "?" or ez_slot == "!" %}.{% endunless %}

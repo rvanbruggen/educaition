@@ -16,7 +16,7 @@ en rapporten van grote instellingen, en Vlaams onderzoek krijgt altijd voorrang.
       <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
       <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
       {% include tag-badges.html item=post %}
-      <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+      <p>{% include eerste-zin.html item=post %}</p>
     </li>
     {% endif %}
   {% endfor %}
