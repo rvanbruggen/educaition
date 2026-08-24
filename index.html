@@ -10,10 +10,14 @@ in het onderwijs — gefilterd op niveau, vak, thema en regio. Voor leerkrachten
 <div class="home-grid">
   <section class="kolom-artikels">
     <h2>Artikels</h2>
-    <ul class="post-list">
+    <div class="thema-kiezer" id="thema-kiezer" role="group" aria-label="Filter artikels op thema">
+      <span class="badge badge-kiezer actief" data-slug="">Alle</span>
+      {% for t in site.data.tags.thema %}<span class="badge badge-kiezer badge-thema" data-slug="{{ t.slug }}">{{ t.naam }}</span>{% endfor %}
+    </div>
+    <ul class="post-list" id="artikel-lijst">
       {% for post in site.posts %}
         {% unless post.type == "digest" or post.type == "digest-internationaal" or post.type == "academische-publicatie" or post.type == "podcast-vodcast" %}
-        <li>
+        <li data-tags="{{ post.niveau | join: ' ' }} {{ post.vak | join: ' ' }} {{ post.thema | join: ' ' }} {{ post.regio | join: ' ' }} {{ post.type }}">
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
           {% include tag-badges.html item=post %}
@@ -22,6 +26,7 @@ in het onderwijs — gefilterd op niveau, vak, thema en regio. Voor leerkrachten
         {% endunless %}
       {% endfor %}
     </ul>
+    <p id="artikel-teller" class="meta" hidden></p>
     <p><a href="{{ '/filter/' | relative_url }}">Alle artikels verkennen en filteren →</a></p>
   </section>
 
@@ -47,3 +52,41 @@ in het onderwijs — gefilterd op niveau, vak, thema en regio. Voor leerkrachten
     </div>
   </aside>
 </div>
+
+<script>
+(function () {
+  var kiezer = document.getElementById('thema-kiezer');
+  var lijst = document.getElementById('artikel-lijst');
+  var teller = document.getElementById('artikel-teller');
+  if (!kiezer || !lijst) return;
+
+  function apply(slug) {
+    var pills = kiezer.querySelectorAll('.badge-kiezer');
+    for (var i = 0; i < pills.length; i++) {
+      pills[i].classList.toggle('actief', pills[i].getAttribute('data-slug') === slug);
+    }
+    var items = lijst.children, zichtbaar = 0;
+    for (var j = 0; j < items.length; j++) {
+      var tags = ' ' + (items[j].getAttribute('data-tags') || '') + ' ';
+      var toon = !slug || tags.indexOf(' ' + slug + ' ') !== -1;
+      items[j].style.display = toon ? '' : 'none';
+      if (toon) zichtbaar++;
+    }
+    if (teller) {
+      teller.hidden = !slug;
+      teller.textContent = slug ? zichtbaar + ' artikel' + (zichtbaar === 1 ? '' : 's') + ' met deze tag' : '';
+    }
+  }
+
+  kiezer.addEventListener('click', function (e) {
+    var b = e.target.closest('.badge-kiezer');
+    if (b) apply(b.getAttribute('data-slug'));
+  });
+
+  // pills op de artikelkaarten zijn ook selecteerbaar
+  lijst.addEventListener('click', function (e) {
+    var b = e.target.closest('.badge');
+    if (b) apply(b.textContent.trim());
+  });
+})();
+</script>

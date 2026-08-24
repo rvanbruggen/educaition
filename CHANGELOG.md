@@ -3,6 +3,16 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.5.3 — 2026-08-24
+
+- Homepage: themakiezer onder de kop "Artikels" — klikbare pills filteren de
+  artikellijst ter plekke, met teller; ook de pills op de artikelkaarten zelf zijn
+  nu selecteerbaar als filter
+- "Verkennen" heet voortaan "Artikels" (nav en paginatitel); de URL `/filter/`
+  blijft ongewijzigd, dus geen gebroken links
+- Artikelspagina: de badges in de zoekresultaten krijgen nu dezelfde kleuren per
+  facet (niveau, vak, thema, regio, type) als op de homepage
+
 ## 0.5.2 — 2026-08-24
 
 - Samengevat: dubbele week 34-edities opgeruimd — de digesttaak liep tweemaal,

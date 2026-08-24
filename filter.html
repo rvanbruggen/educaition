@@ -1,9 +1,9 @@
 ---
 layout: default
-title: Verkennen
+title: Artikels
 permalink: /filter/
 ---
-<h1>Verkennen</h1>
+<h1>Artikels</h1>
 <p>Zoek in alle artikels en filter op niveau, vak, thema, regio of contenttype.</p>
 
 <div class="zoekbalk">
@@ -123,10 +123,12 @@ permalink: /filter/
     document.getElementById('resultaat-teller').textContent =
       hits.length + ' artikel' + (hits.length === 1 ? '' : 's') + ' gevonden';
     document.getElementById('resultaten').innerHTML = hits.map(function (p) {
-      var badges = []
-        .concat(p.niveau || [], p.vak || [], p.thema || [])
-        .map(function (t) { return '<span class="badge">' + t + '</span>'; })
-        .join(' ');
+      var badges = ['niveau', 'vak', 'thema', 'regio'].map(function (f) {
+        return (p[f] || []).map(function (t) {
+          return '<span class="badge badge-' + f + '">' + t + '</span>';
+        }).join(' ');
+      }).filter(Boolean).join(' ');
+      if (p.type) badges += ' <span class="badge badge-type">' + p.type + '</span>';
       return '<li><h3><a href="' + p.url + '">' + highlight(p.title, terms) + '</a></h3>' +
         '<p class="meta">' + p.date + '</p>' +
         '<p class="badges">' + badges + '</p>' +

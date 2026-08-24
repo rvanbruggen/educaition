@@ -107,6 +107,14 @@ a { color: var(--accent); }
 .badge-regio { background: #f3e8ff; color: var(--regio); }
 .badge-type { background: #eef1f5; color: var(--type); }
 
+/* ---- themakiezer (homepage) ---- */
+.thema-kiezer { display: flex; flex-wrap: wrap; gap: .4rem; margin: .2rem 0 1rem; }
+.badge-kiezer { cursor: pointer; user-select: none; border: 1px solid transparent; }
+.badge-kiezer:hover { border-color: currentColor; }
+.badge-kiezer.actief { background: var(--accent); color: #fff; }
+.home .kolom-artikels .badges .badge { cursor: pointer; }
+.home .kolom-artikels .badges .badge:hover { text-decoration: underline; }
+
 /* ---- lijsten als kaarten ---- */
 .post-list { list-style: none; padding: 0; }
 .post-list li {

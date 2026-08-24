@@ -4,7 +4,7 @@ description: >-
   wekelijks samengevat en doorzoekbaar per niveau, vak en thema.
 lang: nl
 timezone: Europe/Brussels
-version: "0.5.2"
+version: "0.5.3"
 url: "https://www.educaition.today"
 baseurl: ""
 
