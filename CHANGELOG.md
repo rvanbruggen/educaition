@@ -3,6 +3,17 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.5.2 — 2026-08-24
+
+- Samengevat: dubbele week 34-edities opgeruimd — de digesttaak liep tweemaal,
+  waardoor er per markt twee posts met dezelfde slug bestonden (URL-conflict op
+  `/2026/08/digest-week-34/` en `/2026/08/digest-internationaal-week-34/`)
+- Vlaanderen: de editie van 19/08 verwijderd; haar drie items zitten integraal in
+  "Samengevat, week 34" van 23/08
+- Internationaal: de vier items van 19/08 (Ohio, STUDENTS FIRST Act, VK-cijfers,
+  EU-OESO AI-geletterdheidskader) samengevoegd in de editie van 23/08 als items 5-8;
+  de post van 19/08 verwijderd — geen inhoud verloren
+
 ## 0.5.1 — 2026-08-24
 
 - Mediahoek: ingebedde spelers — Spotify-showspelers en privacyvriendelijke
