@@ -3,6 +3,15 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.6.1 — 2026-08-24
+
+- Fix: de stylesheet wordt nu geladen met een versieparameter
+  (`style.css?v=<versie>`) zodat browsers na elke release de nieuwe CSS ophalen —
+  bezoekers met een gecachete oude stylesheet zagen de artikelthumbnails op
+  natuurlijke grootte, wat de homepage-layout brak
+- Artikelthumbnails: uniforme grootte, relatief aan de pagina — maximaal 15% van
+  de schermbreedte (clamp 120-216px), 16:9 bijgesneden
+
 ## 0.6.0 — 2026-08-24
 
 - Homepage visueler: artikelkaarten tonen nu een thumbnail — het Open

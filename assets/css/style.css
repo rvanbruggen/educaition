@@ -280,8 +280,8 @@ details[open] { box-shadow: 0 2px 8px rgba(35, 41, 70, .08); }
 /* artikelthumbnails (Open Graph-beelden van de bron) */
 .post-thumb-link { float: right; margin: 0 0 .5rem .9rem; }
 .post-thumb {
-  display: block; width: 168px; aspect-ratio: 16 / 9;
-  object-fit: cover; border-radius: 8px;
+  display: block; width: clamp(120px, 15vw, 216px); aspect-ratio: 16 / 9;
+  height: auto; object-fit: cover; border-radius: 8px;
   border: 1px solid var(--line);
 }
 @media (max-width: 600px) {
