@@ -29,7 +29,7 @@ en wordt regelmatig geduid in onze samenvattingen. Voor leerkrachten, eerst en v
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
           {% include tag-badges.html item=post %}
-          {% assign zin = post.excerpt | strip_html | strip_newlines | split: ". " | first | strip %}
+          {% assign zin = post.excerpt | strip_html | normalize_whitespace | split: ". " | first | strip %}
           {% assign slot = zin | slice: -1, 1 %}
           <p>{{ zin }}{% unless slot == "." or slot == "?" or slot == "!" %}.{% endunless %}</p>
         </li>

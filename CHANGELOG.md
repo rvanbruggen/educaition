@@ -3,6 +3,12 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.6.3 — 2026-08-24
+
+- Fix: woorden in artikelfragmenten plakten aan elkaar wanneer de brontekst een
+  regeleinde bevatte ("hetlerarenplatform") — `normalize_whitespace` in plaats
+  van `strip_newlines`
+
 ## 0.6.2 — 2026-08-24
 
 - Homepage: maximaal 15 artikels in de lijst
