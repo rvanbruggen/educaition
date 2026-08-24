@@ -3,6 +3,18 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.5.1 — 2026-08-24
+
+- Mediahoek: ingebedde spelers — Spotify-showspelers en privacyvriendelijke
+  YouTube-embeds (youtube-nocookie.com) via nieuwe front-matterattributen
+  `spotify_show`, `spotify_episode` en `youtube_id`; spelers verschijnen op de
+  postpagina én inline op /media/ (nieuwe include `embed-player.html`, lazy loading)
+- Mediahoek: dubbele vermelding samengevoegd — "AI en Onderwijs" en "Onderwijs & AI
+  (Metis)" bleken dezelfde podcast van Metis Onderwijsadvies te zijn; één post blijft
+  over, met hosts en alle luisterlinks
+- Opmerking: de wijzigingen aan include/layout/CSS werden op 2026-08-23 al
+  meegecommit door een geplande taak (commit "New run")
+
 ## 0.5.0 — 2026-08-22
 
 - Nieuwe sectie "Academische hoek" (`/academisch/`): Nederlandstalige samenvattingen
