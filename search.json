@@ -8,6 +8,7 @@ layout: null
     "url": {{ post.url | relative_url | jsonify }},
     "date": {{ post.date | date: "%Y-%m-%d" | jsonify }},
     "excerpt": {{ post.excerpt | strip_html | truncate: 200 | jsonify }},
+    "image": {{ post.image | jsonify }},
     "content": {{ post.content | strip_html | normalize_whitespace | jsonify }},
     "niveau": {{ post.niveau | jsonify }},
     "vak": {{ post.vak | jsonify }},

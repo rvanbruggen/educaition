@@ -3,6 +3,12 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.6.4 — 2026-08-24
+
+- Artikelspagina (/filter/): zoekresultaten tonen nu dezelfde OG-thumbnails als
+  de homepage — `image`-veld toegevoegd aan search.json, weergave in de
+  resultatenlijst met dezelfde stijl en stille fallback
+
 ## 0.6.3 — 2026-08-24
 
 - Fix: woorden in artikelfragmenten plakten aan elkaar wanneer de brontekst een
