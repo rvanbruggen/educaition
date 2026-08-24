@@ -1,7 +1,7 @@
 # EducAItion
 
-AI en onderwijs in Vlaanderen — nieuws, best practices en regelgeving, wekelijks
-samengevat en doorzoekbaar per niveau, vak, thema en regio.
+Dé hub voor AI en onderwijs in Vlaanderen en de wereld — nieuws, best practices,
+academisch onderzoek, media en regelgeving, doorzoekbaar per niveau, vak, thema en regio.
 
 **Live site:** [https://www.educaition.today](https://www.educaition.today)
 *(voorheen [https://rvanbruggen.github.io/educaition/](https://rvanbruggen.github.io/educaition/); sinds v0.4.2 draait de site op het eigen domein, `url`/`baseurl` in `_config.yml` zijn hierop aangepast)*

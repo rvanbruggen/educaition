@@ -3,6 +3,15 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.5.4 — 2026-08-24
+
+- Herpositionering: de site presenteert zich voortaan als "dé hub voor AI en
+  onderwijs in Vlaanderen en de wereld" in plaats van als wekelijkse samenvatting —
+  nieuwe kop en uitgebreidere intro op de homepage, aangepaste meta-description
+  (`_config.yml`), README en Over-pagina
+- Over-pagina: legt nu uit hoe de site evolueerde van wekelijkse nieuwssamenvatting
+  naar verzamelpunt voor artikels, academisch onderzoek, media en regelgeving
+
 ## 0.5.3 — 2026-08-24
 
 - Homepage: themakiezer onder de kop "Artikels" — klikbare pills filteren de
