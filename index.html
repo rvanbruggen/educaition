@@ -17,8 +17,11 @@ en wordt regelmatig geduid in onze samenvattingen. Voor leerkrachten, eerst en v
       {% for t in site.data.tags.thema %}<span class="badge badge-kiezer badge-thema" data-slug="{{ t.slug }}">{{ t.naam }}</span>{% endfor %}
     </div>
     <ul class="post-list" id="artikel-lijst">
+      {% assign artikelteller = 0 %}
       {% for post in site.posts %}
         {% unless post.type == "digest" or post.type == "digest-internationaal" or post.type == "academische-publicatie" or post.type == "podcast-vodcast" %}
+        {% if artikelteller < 15 %}
+        {% assign artikelteller = artikelteller | plus: 1 %}
         <li data-tags="{{ post.niveau | join: ' ' }} {{ post.vak | join: ' ' }} {{ post.thema | join: ' ' }} {{ post.regio | join: ' ' }} {{ post.type }}">
           {% if post.image %}<a href="{{ post.url | relative_url }}" class="post-thumb-link" tabindex="-1" aria-hidden="true"><img
             class="post-thumb" src="{{ post.image }}" alt="" loading="lazy"
@@ -26,8 +29,11 @@ en wordt regelmatig geduid in onze samenvattingen. Voor leerkrachten, eerst en v
           <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
           <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
           {% include tag-badges.html item=post %}
-          <p>{{ post.excerpt | strip_html | truncate: 180 }}</p>
+          {% assign zin = post.excerpt | strip_html | strip_newlines | split: ". " | first | strip %}
+          {% assign slot = zin | slice: -1, 1 %}
+          <p>{{ zin }}{% unless slot == "." or slot == "?" or slot == "!" %}.{% endunless %}</p>
         </li>
+        {% endif %}
         {% endunless %}
       {% endfor %}
     </ul>

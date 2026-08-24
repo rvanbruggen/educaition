@@ -3,6 +3,13 @@
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.6.2 — 2026-08-24
+
+- Homepage: maximaal 15 artikels in de lijst
+- Artikelkaarten: het fragment is nu de volledige eerste zin van de post — geen
+  afgekapte halve zinnen of woorden meer
+- De intropagraaf loopt over de volledige paginabreedte
+
 ## 0.6.1 — 2026-08-24
 
 - Fix: de stylesheet wordt nu geladen met een versieparameter

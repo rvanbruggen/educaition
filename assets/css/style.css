@@ -224,7 +224,7 @@ details[open] { box-shadow: 0 2px 8px rgba(35, 41, 70, .08); }
 }
 
 /* ---- homepage: twee kolommen ---- */
-.intro { font-size: 1.05rem; max-width: 60ch; }
+.intro { font-size: 1.05rem; max-width: none; }
 .home-grid {
   display: grid; grid-template-columns: minmax(0, 2fr) minmax(280px, 1fr);
   gap: 2rem; align-items: start; margin-top: 1rem;
