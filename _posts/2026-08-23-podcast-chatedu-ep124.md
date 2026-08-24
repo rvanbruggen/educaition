@@ -7,6 +7,7 @@ thema: [evaluatie-en-fraude, tools-en-platformen]
 regio: [internationaal]
 type: podcast-vodcast
 doelgroep: [leerkracht, directie-en-beleid]
+spotify_show: 2F2srBvTeYu9Xcg6K910ol
 ---
 
 Nieuwe aflevering (22 augustus) van de Amerikaanse podcast ChatEDU, met hosts Matt
