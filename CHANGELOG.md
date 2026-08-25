@@ -1,7 +1,23 @@
+---
+sitemap: false
+---
+
 # Changelog
 
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
+
+## 0.6.7 — 2026-08-25
+
+- SEO-verbeteringen (prioriteit 2 uit SEO-ACTION-PLAN.md):
+  - Homepagina-titel nu trefwoordrijk ("AI en onderwijs in Vlaanderen — nieuws,
+    onderzoek en beleid") in plaats van "Home".
+  - `lang: nl_BE` zodat og:locale correct is; `author`, `logo` en `social`
+    toegevoegd voor volledige JSON-LD.
+  - Standaard social share-afbeelding (`assets/img/og-default.png`, 1200×630)
+    voor alle pagina's zonder eigen beeld; PNG-logo (`logo-512.png`) toegevoegd.
+  - `/CHANGELOG/` uit de sitemap gehaald (`sitemap: false`).
+  - Handgeschreven meta descriptions voor de vier digestposts.
 
 ## 0.6.6 — 2026-08-24
 

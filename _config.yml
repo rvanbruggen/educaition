@@ -2,9 +2,16 @@ title: EducAItion
 description: >-
   Dé hub voor AI en onderwijs in Vlaanderen en de wereld — nieuws, onderzoek,
   media en regelgeving, doorzoekbaar per niveau, vak en thema.
-lang: nl
+lang: nl_BE
 timezone: Europe/Brussels
-version: "0.6.6"
+author: Rik Van Bruggen
+# jekyll-seo-tag: logo voor JSON-LD Organization + sociale profielen
+logo: /assets/img/logo-512.png
+social:
+  name: EducAItion
+  links:
+    - https://github.com/rvanbruggen/educaition
+version: "0.6.7"
 url: "https://www.educaition.today"
 baseurl: ""
 
@@ -29,6 +36,13 @@ defaults:
       regio: [vlaanderen]
       type: nieuws
       doelgroep: [leerkracht]
+  # Standaard og:image voor pagina's (niet voor posts: index.html/filter.html
+  # gebruiken post.image voor thumbnails, een default zou daar opduiken)
+  - scope:
+      path: ""
+      type: pages
+    values:
+      image: /assets/img/og-default.png
 
 exclude:
   - Gemfile

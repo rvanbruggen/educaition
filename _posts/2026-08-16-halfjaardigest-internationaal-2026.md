@@ -7,6 +7,7 @@ thema: [beleid-en-regelgeving, onderzoek-en-evidentie, tools-en-platformen, ai-g
 regio: [internationaal, eu, nederland]
 type: digest-internationaal
 doelgroep: [leerkracht, directie-en-beleid]
+description: "De belangrijkste internationale ontwikkelingen rond AI en onderwijs, januari–augustus 2026 — van het EU AI Literacy Framework tot de platformrace naar de klas — geduid voor Vlaanderen."
 ---
 
 De belangrijkste internationale ontwikkelingen rond AI en onderwijs sinds nieuwjaar,

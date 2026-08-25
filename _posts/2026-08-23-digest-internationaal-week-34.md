@@ -7,6 +7,7 @@ thema: [tools-en-platformen, beleid-en-regelgeving, ai-geletterdheid, didactiek-
 regio: [internationaal, eu]
 type: digest-internationaal
 doelgroep: [leerkracht, directie-en-beleid, ict-coordinator]
+description: "Internationaal weekoverzicht AI en onderwijs: miljarden voor AI zonder koopwijzer, de platformrace naar de klas en UNESCO's Digital Learning Week — met duiding voor Vlaanderen."
 ---
 
 Onze internationale weekafsluiter: de belangrijkste buitenlandse ontwikkelingen van de

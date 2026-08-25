@@ -7,6 +7,7 @@ thema: [beleid-en-regelgeving, evaluatie-en-fraude, onderzoek-en-evidentie, ai-g
 regio: [vlaanderen]
 type: digest
 doelgroep: [leerkracht, directie-en-beleid]
+description: "Halfjaaroverzicht AI en onderwijs in Vlaanderen, januari–augustus 2026: 26 artikels over beleid, evaluatie, onderzoek en AI-geletterdheid, thematisch gebundeld."
 ---
 
 Wat gebeurde er in het Vlaamse onderwijslandschap rond AI sinds nieuwjaar? Dit
