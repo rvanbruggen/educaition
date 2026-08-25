@@ -101,6 +101,7 @@ type:
   - {slug: opinie, naam: Opinie}
   - {slug: academische-publicatie, naam: Academische publicatie}
   - {slug: podcast-vodcast, naam: "Podcast / vodcast"}
+  - {slug: boek, naam: Boek}
 
 doelgroep:
   - {slug: leerkracht, naam: Leerkracht}

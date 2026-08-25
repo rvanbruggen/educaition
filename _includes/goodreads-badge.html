@@ -1,0 +1,17 @@
+{% comment %}
+  Goodreads-context voor boekposts (type: boek).
+  Aanroep: {% include goodreads-badge.html item=post %}
+  Toont de gemiddelde score als context, niet als ranking; alleen bij
+  voldoende beoordelingen (>= 25). Anders enkel een link naar Goodreads,
+  of niets als het boek niet gelist is.
+{% endcomment %}
+{% assign item = include.item %}
+{% if item.goodreads_url %}
+  {% if item.goodreads_rating and item.goodreads_ratings >= 25 %}
+    <p class="meta goodreads">★ {{ item.goodreads_rating }}
+      ({{ item.goodreads_ratings }} beoordelingen op
+      <a href="{{ item.goodreads_url }}" rel="nofollow noopener">Goodreads</a>)</p>
+  {% else %}
+    <p class="meta goodreads"><a href="{{ item.goodreads_url }}" rel="nofollow noopener">Reviews op Goodreads</a></p>
+  {% endif %}
+{% endif %}

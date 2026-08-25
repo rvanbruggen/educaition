@@ -4,10 +4,13 @@ title: Mediahoek
 permalink: /media/
 ---
 <h1>Mediahoek</h1>
-<p>Podcasts en vodcasts over AI in het onderwijs. We selecteren en beschrijven ze in het
-Nederlands; de shows zelf zijn Nederlandstalig of internationaal.</p>
+<p>Podcasts, vodcasts en leesvoer over AI in het onderwijs. We selecteren en
+beschrijven alles in het Nederlands; de shows en boeken zelf zijn Nederlandstalig
+of internationaal.</p>
 
-<h2>Nederlandstalig</h2>
+<h2>Podcasts &amp; vodcasts</h2>
+
+<h3>Nederlandstalig</h3>
 <ul class="post-list">
   {% for post in site.posts %}
     {% if post.type == "podcast-vodcast" %}{% unless post.regio contains "internationaal" %}
@@ -22,7 +25,7 @@ Nederlands; de shows zelf zijn Nederlandstalig of internationaal.</p>
   {% endfor %}
 </ul>
 
-<h2>Internationaal</h2>
+<h3>Internationaal</h3>
 <ul class="post-list">
   {% for post in site.posts %}
     {% if post.type == "podcast-vodcast" %}{% if post.regio contains "internationaal" %}
@@ -37,7 +40,45 @@ Nederlands; de shows zelf zijn Nederlandstalig of internationaal.</p>
   {% endfor %}
 </ul>
 
-<p><em>Hoe we deze hoek vullen: we volgen de RSS-feeds van een vaste lijst shows en scannen
-daarnaast podcasttranscripties op relevante trefwoorden. Ken je een podcast — zeker een
-Vlaamse! — die hier thuishoort?
+<h2 id="leeshoek">Leeshoek</h2>
+<p>Boeken om je kennis van AI en onderwijs te verdiepen — van praktijkgidsen voor
+de klas tot academische referentiewerken en bredere maatschappelijke duiding. Waar
+beschikbaar tonen we de Goodreads-score als context (geen ranking): smaken
+verschillen, en Nederlandstalige boeken hebben er vaak maar een handvol
+beoordelingen.</p>
+
+<h3>Nederlandstalig</h3>
+<ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.type == "boek" %}{% unless post.regio contains "internationaal" %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="meta">{{ post.auteur }}</p>
+      {% include tag-badges.html item=post %}
+      <p>{% include eerste-zin.html item=post %}</p>
+      {% include goodreads-badge.html item=post %}
+    </li>
+    {% endunless %}{% endif %}
+  {% endfor %}
+</ul>
+
+<h3>Internationaal</h3>
+<ul class="post-list">
+  {% for post in site.posts %}
+    {% if post.type == "boek" %}{% if post.regio contains "internationaal" %}
+    <li>
+      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+      <p class="meta">{{ post.auteur }}</p>
+      {% include tag-badges.html item=post %}
+      <p>{% include eerste-zin.html item=post %}</p>
+      {% include goodreads-badge.html item=post %}
+    </li>
+    {% endif %}{% endif %}
+  {% endfor %}
+</ul>
+
+<p><em>Hoe we deze hoek vullen: we volgen de RSS-feeds van een vaste lijst shows,
+scannen podcasttranscripties op relevante trefwoorden, en selecteren boeken
+redactioneel — Goodreads-scores zijn context, geen criterium. Ken je een podcast
+of boek — zeker een Vlaams! — dat hier thuishoort?
 <a href="{{ '/over/' | relative_url }}">Laat het ons weten</a>.</em></p>

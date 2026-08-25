@@ -11,7 +11,7 @@ social:
   name: EducAItion
   links:
     - https://github.com/rvanbruggen/educaition
-version: "0.7.0"
+version: "0.7.1"
 url: "https://www.educaition.today"
 baseurl: ""
 

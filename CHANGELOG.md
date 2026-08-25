@@ -7,6 +7,17 @@ sitemap: false
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.7.1 — 2026-08-25
+
+- Leeshoek toegevoegd aan de Mediahoek (/media/): 13 boekposts (5 Nederlandstalig,
+  8 internationaal) met nieuw type `boek` in het tagvocabularium.
+- Goodreads-context bij boeken: nieuwe include `goodreads-badge.html` toont de
+  gemiddelde score en het aantal beoordelingen als context (geen ranking), alleen
+  bij ≥ 25 beoordelingen; anders enkel een reviewlink. Frontmatter-velden:
+  `goodreads_url`, `goodreads_rating`, `goodreads_ratings`, `goodreads_checked`.
+- Mediahoek herschikt in twee secties: "Podcasts & vodcasts" en "Leeshoek",
+  elk met Nederlandstalig/Internationaal.
+
 ## 0.7.0 — 2026-08-25
 
 - SEO-verbeteringen (prioriteit 3 uit SEO-ACTION-PLAN.md):
