@@ -7,6 +7,23 @@ sitemap: false
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.7.0 — 2026-08-25
+
+- SEO-verbeteringen (prioriteit 3 uit SEO-ACTION-PLAN.md):
+  - 17 statische, crawlbare tagpagina's: `/thema/<slug>/` (alle 9 thema's) en
+    `/niveau/<slug>/` (de 8 niveaus die in posts voorkomen — geen lege
+    pagina's), via nieuwe layout `_layouts/tag.html`. Automatisch in de
+    sitemap; elke pagina linkt naar alle andere tagpagina's en naar /filter/.
+    Regenereren na het taggen met een nieuw niveau:
+    `python3 scripts/genereer-tagpaginas.py`.
+  - Niveau- en themabadges op postpagina's zijn nu links naar die tagpagina's
+    (`tag-badges.html` met `links=true`; homepage-badges blijven JS-filters).
+  - "Lees ook"-blok op postpagina's: max. vier verwante artikels met een
+    gedeeld thema.
+  - FAQPage JSON-LD (schema.org) op /faq/, automatisch opgebouwd uit de
+    details/summary-blokken.
+  - Crawlbare "Blader per thema / onderwijsniveau"-links onderaan /filter/.
+
 ## 0.6.7 — 2026-08-25
 
 - SEO-verbeteringen (prioriteit 2 uit SEO-ACTION-PLAN.md):

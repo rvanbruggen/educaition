@@ -7,9 +7,30 @@ layout: default
     <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
     {% if page.bron %} · <a href="{{ page.bron }}" rel="noopener">bron</a>{% endif %}
   </p>
-  {% include tag-badges.html item=page %}
+  {% include tag-badges.html item=page links=true %}
   {% include embed-player.html item=page %}
   <div class="content">
     {{ content }}
   </div>
+
+  {% comment %} Verwante artikels: zelfde thema, nieuwste eerst, max 4. {% endcomment %}
+  {% assign verwant = "" | split: "" %}
+  {% for p in site.posts %}
+    {% unless p.url == page.url %}
+      {% assign gedeeld = false %}
+      {% for t in page.thema %}{% if p.thema contains t %}{% assign gedeeld = true %}{% endif %}{% endfor %}
+      {% if gedeeld %}{% assign verwant = verwant | push: p %}{% endif %}
+    {% endunless %}
+  {% endfor %}
+  {% if verwant.size > 0 %}
+  <aside class="verwant-artikels">
+    <h2>Lees ook</h2>
+    <ul>
+      {% for p in verwant limit: 4 %}
+      <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a>
+          <span class="meta">— {{ p.date | date: "%-d %B %Y" }}</span></li>
+      {% endfor %}
+    </ul>
+  </aside>
+  {% endif %}
 </article>

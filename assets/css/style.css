@@ -102,6 +102,13 @@ a { color: var(--accent); }
   font-size: .72rem; font-weight: 600; padding: .18rem .6rem; border-radius: 999px;
   background: var(--accent-soft); color: var(--niveau); white-space: nowrap;
 }
+a.badge { text-decoration: none; }
+a.badge:hover { text-decoration: underline; }
+.verwant-artikels { margin-top: 2rem; padding-top: 1rem; border-top: 1px solid var(--line); }
+.verwant-artikels h2 { font-size: 1.1rem; }
+.verwant-artikels ul { list-style: none; padding: 0; }
+.verwant-artikels li { margin: .45rem 0; }
+.tag-pagina .tag-verwant h2 { font-size: 1.05rem; margin-top: 1.2rem; }
 .badge-vak { background: #e6f6ef; color: var(--vak); }
 .badge-thema { background: var(--amber-soft); color: var(--thema); }
 .badge-regio { background: #f3e8ff; color: var(--regio); }

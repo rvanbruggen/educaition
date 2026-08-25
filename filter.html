@@ -159,3 +159,18 @@ permalink: /filter/
     });
 })();
 </script>
+
+{% comment %} Statische, crawlbare links naar de tagpagina's — ook nuttig
+   voor bezoekers die liever bladeren dan filteren. {% endcomment %}
+<nav class="tag-verwant" aria-label="Blader per thema of niveau">
+  <h2>Blader per thema</h2>
+  <p class="badges">
+    {% assign themas = site.pages | where: "dim", "thema" | sort: "h1" %}
+    {% for p in themas %}<a class="badge badge-thema" href="{{ p.url | relative_url }}">{{ p.h1 }}</a>{% endfor %}
+  </p>
+  <h2>Blader per onderwijsniveau</h2>
+  <p class="badges">
+    {% assign niveaus = site.pages | where: "dim", "niveau" | sort: "h1" %}
+    {% for p in niveaus %}<a class="badge badge-niveau" href="{{ p.url | relative_url }}">{{ p.h1 }}</a>{% endfor %}
+  </p>
+</nav>

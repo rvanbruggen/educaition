@@ -214,3 +214,34 @@ zijn informatief en geen juridisch advies; regels verschillen per school en inst
   <a href="https://www.npuls.nl/_assets/c46a36b7-2ec5-4fe1-a7c1-7d50b43edb94/Npuls-Handreiking-4-AI-B5.pdf">Npuls — Handreiking 4 (PDF)</a> ·
   <a href="https://community-data-ai.npuls.nl/attachment/entity/1855cef0-68ae-4e11-b101-5b67ef449129">De Haagse Hogeschool — Handreiking (G)AI</a></p>
 </details>
+
+<script>
+/* FAQPage structured data (schema.org), automatisch opgebouwd uit de
+   details/summary-blokken hierboven — blijft dus in sync bij aanpassingen. */
+(function () {
+  var items = [];
+  document.querySelectorAll('details').forEach(function (d) {
+    var vraag = d.querySelector('summary');
+    if (!vraag) return;
+    var antwoord = '';
+    d.querySelectorAll('p:not(.bronnen)').forEach(function (p) {
+      antwoord += (antwoord ? ' ' : '') + p.textContent.replace(/\s+/g, ' ').trim();
+    });
+    if (!antwoord) return;
+    items.push({
+      "@type": "Question",
+      "name": vraag.textContent.replace(/\s+/g, ' ').trim(),
+      "acceptedAnswer": { "@type": "Answer", "text": antwoord }
+    });
+  });
+  if (!items.length) return;
+  var s = document.createElement('script');
+  s.type = 'application/ld+json';
+  s.textContent = JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": items
+  });
+  document.head.appendChild(s);
+})();
+</script>

@@ -1,8 +1,23 @@
+{% comment %}
+  Tagbadges voor een post of pagina.
+  Aanroep: {% include tag-badges.html item=post %}
+  Met links=true worden niveau- en themabadges links naar de statische
+  tagpagina's (/niveau/<slug>/ en /thema/<slug>/) — gebruikt op postpagina's;
+  op de homepage blijven het spans (daar filtert JavaScript op klik).
+{% endcomment %}
 {% assign item = include.item %}
 <p class="badges">
-  {% for t in item.niveau %}<span class="badge badge-niveau">{{ t }}</span>{% endfor %}
+  {% if include.links %}
+    {% for t in item.niveau %}<a class="badge badge-niveau" href="{{ '/niveau/' | append: t | append: '/' | relative_url }}">{{ t }}</a>{% endfor %}
+  {% else %}
+    {% for t in item.niveau %}<span class="badge badge-niveau">{{ t }}</span>{% endfor %}
+  {% endif %}
   {% for t in item.vak %}<span class="badge badge-vak">{{ t }}</span>{% endfor %}
-  {% for t in item.thema %}<span class="badge badge-thema">{{ t }}</span>{% endfor %}
+  {% if include.links %}
+    {% for t in item.thema %}<a class="badge badge-thema" href="{{ '/thema/' | append: t | append: '/' | relative_url }}">{{ t }}</a>{% endfor %}
+  {% else %}
+    {% for t in item.thema %}<span class="badge badge-thema">{{ t }}</span>{% endfor %}
+  {% endif %}
   {% for t in item.regio %}<span class="badge badge-regio">{{ t }}</span>{% endfor %}
   {% if item.type %}<span class="badge badge-type">{{ item.type }}</span>{% endif %}
 </p>

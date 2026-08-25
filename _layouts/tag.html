@@ -1,0 +1,47 @@
+---
+layout: default
+---
+{% comment %}
+  Statische, crawlbare landingspagina per tag (thema of niveau).
+  Front matter van de stubpagina bepaalt: dim (bv. "thema"), tag_slug, title, description.
+{% endcomment %}
+<article class="page tag-pagina">
+  <h1>{{ page.h1 | default: page.title }}</h1>
+  {% if page.intro %}<p class="intro">{{ page.intro }}</p>{% endif %}
+
+  {% assign gevonden = 0 %}
+  <ul class="post-list">
+    {% for post in site.posts %}
+      {% assign vals = post[page.dim] %}
+      {% if vals contains page.tag_slug %}
+        {% assign gevonden = gevonden | plus: 1 %}
+        <li>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time></p>
+          <p>{% include eerste-zin.html item=post %}</p>
+        </li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+  {% if gevonden == 0 %}
+  <p>Nog geen artikels met deze tag. Verken alle artikels via de <a href="{{ '/filter/' | relative_url }}">filterpagina</a>.</p>
+  {% else %}
+  <p><a href="{{ '/filter/' | relative_url }}">Verfijn verder op niveau, vak, thema of regio →</a></p>
+  {% endif %}
+
+  <hr>
+  {% comment %} Navigatie op basis van bestaande tagpagina's — blijft
+     automatisch in sync met de aangemaakte stubpagina's. {% endcomment %}
+  <nav class="tag-verwant" aria-label="Verwante pagina's">
+    <h2>Verken per thema</h2>
+    <p class="badges">
+      {% assign themas = site.pages | where: "dim", "thema" | sort: "h1" %}
+      {% for p in themas %}<a class="badge badge-thema" href="{{ p.url | relative_url }}">{{ p.h1 }}</a>{% endfor %}
+    </p>
+    <h2>Verken per onderwijsniveau</h2>
+    <p class="badges">
+      {% assign niveaus = site.pages | where: "dim", "niveau" | sort: "h1" %}
+      {% for p in niveaus %}<a class="badge badge-niveau" href="{{ p.url | relative_url }}">{{ p.h1 }}</a>{% endfor %}
+    </p>
+  </nav>
+</article>
