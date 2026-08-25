@@ -5,8 +5,8 @@ body_class: home
 ---
 <h1>Dé hub voor AI en onderwijs, in Vlaanderen en de wereld</h1>
 <p class="intro">EducAItion is een verzamelpunt voor alles wat beweegt rond artificiële intelligentie
-in het onderwijs: nieuwsartikels, best practices, academisch onderzoek, podcasts en vodcasts,
-beleid en regelgeving. Alles is getagd en doorzoekbaar per niveau, vak, thema en regio,
+in het onderwijs: nieuwsartikels, best practices, academisch onderzoek, podcasts, vodcasts
+en boeken, beleid en regelgeving. Alles is getagd en doorzoekbaar per niveau, vak, thema en regio,
 en wordt regelmatig geduid in onze samenvattingen. Voor leerkrachten, eerst en vooral.</p>
 
 <div class="home-grid">
@@ -19,7 +19,7 @@ en wordt regelmatig geduid in onze samenvattingen. Voor leerkrachten, eerst en v
     <ul class="post-list" id="artikel-lijst">
       {% assign artikelteller = 0 %}
       {% for post in site.posts %}
-        {% unless post.type == "digest" or post.type == "digest-internationaal" or post.type == "academische-publicatie" or post.type == "podcast-vodcast" %}
+        {% unless post.type == "digest" or post.type == "digest-internationaal" or post.type == "academische-publicatie" or post.type == "podcast-vodcast" or post.type == "boek" %}
         {% if artikelteller < 15 %}
         {% assign artikelteller = artikelteller | plus: 1 %}
         <li data-tags="{{ post.niveau | join: ' ' }} {{ post.vak | join: ' ' }} {{ post.thema | join: ' ' }} {{ post.regio | join: ' ' }} {{ post.type }}">
@@ -62,8 +62,8 @@ en wordt regelmatig geduid in onze samenvattingen. Voor leerkrachten, eerst en v
 
     <div class="media-paneel">
       <h2>Mediahoek</h2>
-      <p class="digest-uitleg">Podcasts en vodcasts over AI in het onderwijs —
-      beluister of bekijk ze meteen hier.</p>
+      <p class="digest-uitleg">Podcasts, vodcasts en boeken over AI in het onderwijs —
+      beluister, bekijk of lees mee.</p>
       <ul class="digest-lijst">
         {% assign mediaposts = site.posts | where: "type", "podcast-vodcast" %}
         {% for post in mediaposts limit: 4 %}
@@ -76,8 +76,18 @@ en wordt regelmatig geduid in onze samenvattingen. Voor leerkrachten, eerst en v
           {% include embed-player.html item=post %}
         </li>
         {% endfor %}
+        {% assign boekposts = site.posts | where: "type", "boek" %}
+        {% for post in boekposts limit: 2 %}
+        <li class="digest-item media-item">
+          <span class="digest-label media-label">Uit de Leeshoek</span>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="meta">{{ post.auteur }}</p>
+          {% include goodreads-badge.html item=post %}
+        </li>
+        {% endfor %}
       </ul>
-      <p class="digest-alle"><a href="{{ '/media/' | relative_url }}">Alle media →</a></p>
+      <p class="digest-alle"><a href="{{ '/media/' | relative_url }}">Alle media →</a>
+      · <a href="{{ '/media/#leeshoek' | relative_url }}">Leeshoek →</a></p>
     </div>
   </aside>
 </div>

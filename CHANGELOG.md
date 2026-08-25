@@ -15,6 +15,11 @@ samen met datum en uur van de laatste build (= laatste push naar `main`).
   gemiddelde score en het aantal beoordelingen als context (geen ranking), alleen
   bij ≥ 25 beoordelingen; anders enkel een reviewlink. Frontmatter-velden:
   `goodreads_url`, `goodreads_rating`, `goodreads_ratings`, `goodreads_checked`.
+- Homepage: het Mediahoek-paneel toont nu naast de vier recentste podcasts ook de
+  twee recentste boeken uit de Leeshoek (label "Uit de Leeshoek", met
+  Goodreads-context) en linkt rechtstreeks naar /media/#leeshoek; boekposts
+  worden uitgesloten van de Artikels-lijst (type `boek` toegevoegd aan de
+  uitsluitlijst, zoals podcasts en digests).
 - Mediahoek herschikt in twee kolommen (nieuwe `.media-grid`, naar het model van
   `.home-grid`): podcasts & vodcasts links (2/3), Leeshoek rechts (1/3), elk met
   Nederlandstalig/Internationaal; gestapeld op schermen smaller dan 900px.
