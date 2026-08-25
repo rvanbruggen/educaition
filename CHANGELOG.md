@@ -15,8 +15,9 @@ samen met datum en uur van de laatste build (= laatste push naar `main`).
   gemiddelde score en het aantal beoordelingen als context (geen ranking), alleen
   bij ≥ 25 beoordelingen; anders enkel een reviewlink. Frontmatter-velden:
   `goodreads_url`, `goodreads_rating`, `goodreads_ratings`, `goodreads_checked`.
-- Mediahoek herschikt in twee secties: "Podcasts & vodcasts" en "Leeshoek",
-  elk met Nederlandstalig/Internationaal.
+- Mediahoek herschikt in twee kolommen (nieuwe `.media-grid`, naar het model van
+  `.home-grid`): podcasts & vodcasts links (2/3), Leeshoek rechts (1/3), elk met
+  Nederlandstalig/Internationaal; gestapeld op schermen smaller dan 900px.
 
 ## 0.7.0 — 2026-08-25
 

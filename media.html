@@ -8,74 +8,80 @@ permalink: /media/
 beschrijven alles in het Nederlands; de shows en boeken zelf zijn Nederlandstalig
 of internationaal.</p>
 
-<h2>Podcasts &amp; vodcasts</h2>
+<div class="media-grid">
+  <div class="kolom-podcasts">
+    <h2>Podcasts &amp; vodcasts</h2>
 
-<h3>Nederlandstalig</h3>
-<ul class="post-list">
-  {% for post in site.posts %}
-    {% if post.type == "podcast-vodcast" %}{% unless post.regio contains "internationaal" %}
-    <li>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
-      {% include tag-badges.html item=post %}
-      <p>{% include eerste-zin.html item=post %}</p>
-      {% include embed-player.html item=post %}
-    </li>
-    {% endunless %}{% endif %}
-  {% endfor %}
-</ul>
+    <h3>Nederlandstalig</h3>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% if post.type == "podcast-vodcast" %}{% unless post.regio contains "internationaal" %}
+        <li>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+          {% include tag-badges.html item=post %}
+          <p>{% include eerste-zin.html item=post %}</p>
+          {% include embed-player.html item=post %}
+        </li>
+        {% endunless %}{% endif %}
+      {% endfor %}
+    </ul>
 
-<h3>Internationaal</h3>
-<ul class="post-list">
-  {% for post in site.posts %}
-    {% if post.type == "podcast-vodcast" %}{% if post.regio contains "internationaal" %}
-    <li>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
-      {% include tag-badges.html item=post %}
-      <p>{% include eerste-zin.html item=post %}</p>
-      {% include embed-player.html item=post %}
-    </li>
-    {% endif %}{% endif %}
-  {% endfor %}
-</ul>
+    <h3>Internationaal</h3>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% if post.type == "podcast-vodcast" %}{% if post.regio contains "internationaal" %}
+        <li>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="meta"><time>{{ post.date | date: "%-d %B %Y" }}</time></p>
+          {% include tag-badges.html item=post %}
+          <p>{% include eerste-zin.html item=post %}</p>
+          {% include embed-player.html item=post %}
+        </li>
+        {% endif %}{% endif %}
+      {% endfor %}
+    </ul>
+  </div>
 
-<h2 id="leeshoek">Leeshoek</h2>
-<p>Boeken om je kennis van AI en onderwijs te verdiepen — van praktijkgidsen voor
-de klas tot academische referentiewerken en bredere maatschappelijke duiding. Waar
-beschikbaar tonen we de Goodreads-score als context (geen ranking): smaken
-verschillen, en Nederlandstalige boeken hebben er vaak maar een handvol
-beoordelingen.</p>
+  <div class="kolom-leeshoek">
+    <h2 id="leeshoek">Leeshoek</h2>
+    <p>Boeken om je kennis van AI en onderwijs te verdiepen — van praktijkgidsen
+    voor de klas tot academische referentiewerken en bredere maatschappelijke
+    duiding. Waar beschikbaar tonen we de Goodreads-score als context (geen
+    ranking): smaken verschillen, en Nederlandstalige boeken hebben er vaak maar
+    een handvol beoordelingen.</p>
 
-<h3>Nederlandstalig</h3>
-<ul class="post-list">
-  {% for post in site.posts %}
-    {% if post.type == "boek" %}{% unless post.regio contains "internationaal" %}
-    <li>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="meta">{{ post.auteur }}</p>
-      {% include tag-badges.html item=post %}
-      <p>{% include eerste-zin.html item=post %}</p>
-      {% include goodreads-badge.html item=post %}
-    </li>
-    {% endunless %}{% endif %}
-  {% endfor %}
-</ul>
+    <h3>Nederlandstalig</h3>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% if post.type == "boek" %}{% unless post.regio contains "internationaal" %}
+        <li>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="meta">{{ post.auteur }}</p>
+          {% include tag-badges.html item=post %}
+          <p>{% include eerste-zin.html item=post %}</p>
+          {% include goodreads-badge.html item=post %}
+        </li>
+        {% endunless %}{% endif %}
+      {% endfor %}
+    </ul>
 
-<h3>Internationaal</h3>
-<ul class="post-list">
-  {% for post in site.posts %}
-    {% if post.type == "boek" %}{% if post.regio contains "internationaal" %}
-    <li>
-      <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
-      <p class="meta">{{ post.auteur }}</p>
-      {% include tag-badges.html item=post %}
-      <p>{% include eerste-zin.html item=post %}</p>
-      {% include goodreads-badge.html item=post %}
-    </li>
-    {% endif %}{% endif %}
-  {% endfor %}
-</ul>
+    <h3>Internationaal</h3>
+    <ul class="post-list">
+      {% for post in site.posts %}
+        {% if post.type == "boek" %}{% if post.regio contains "internationaal" %}
+        <li>
+          <h3><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h3>
+          <p class="meta">{{ post.auteur }}</p>
+          {% include tag-badges.html item=post %}
+          <p>{% include eerste-zin.html item=post %}</p>
+          {% include goodreads-badge.html item=post %}
+        </li>
+        {% endif %}{% endif %}
+      {% endfor %}
+    </ul>
+  </div>
+</div>
 
 <p><em>Hoe we deze hoek vullen: we volgen de RSS-feeds van een vaste lijst shows,
 scannen podcasttranscripties op relevante trefwoorden, en selecteren boeken
