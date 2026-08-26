@@ -1,0 +1,226 @@
+# yaml-language-server: $schema=https://unpkg.com/@sveltia/cms/schema/sveltia-cms.json
+#
+# Sveltia CMS-configuratie voor EducAItion (www.educaition.today)
+# Taxonomie gebaseerd op _data/tags.yml — hou beide bestanden synchroon.
+# Authenticatie: "Sign In with Token" (GitHub personal access token).
+
+backend:
+  name: github
+  repo: rvanbruggen/educaition
+  branch: main
+
+site_url: https://www.educaition.today
+display_url: https://www.educaition.today
+logo_url: https://www.educaition.today/assets/img/logo-512.png
+
+media_folder: assets/img
+public_folder: /assets/img
+
+slug:
+  encoding: ascii
+  clean_accents: true
+
+collections:
+  - name: posts
+    label: Artikels
+    label_singular: Artikel
+    folder: _posts
+    create: true
+    extension: md
+    format: yaml-frontmatter
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    summary: "{{title}}"
+    sortable_fields: [date, title, type]
+    view_groups:
+      - { label: Type, field: type }
+      - { label: Regio, field: regio }
+    view_filters:
+      - { label: Nieuws, field: type, pattern: nieuws }
+      - { label: Digests, field: type, pattern: "digest" }
+      - { label: Podcasts & vodcasts, field: type, pattern: podcast-vodcast }
+      - { label: Boeken, field: type, pattern: boek }
+    fields:
+      - { label: Titel, name: title, widget: string }
+      - label: Datum
+        name: date
+        widget: datetime
+        format: YYYY-MM-DD
+        time_format: false
+      - label: Niveau
+        name: niveau
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: Basisonderwijs, value: basisonderwijs }
+          - { label: "— Kleuteronderwijs", value: kleuteronderwijs }
+          - { label: "— Lager onderwijs", value: lager-onderwijs }
+          - { label: Secundair onderwijs, value: secundair-onderwijs }
+          - { label: "— Eerste graad", value: eerste-graad }
+          - { label: "— Tweede graad", value: tweede-graad }
+          - { label: "— Derde graad", value: derde-graad }
+          - { label: "— Doorstroomfinaliteit", value: doorstroomfinaliteit }
+          - { label: "— Dubbele finaliteit", value: dubbele-finaliteit }
+          - { label: "— Arbeidsmarktfinaliteit", value: arbeidsmarktfinaliteit }
+          - { label: Hoger onderwijs, value: hoger-onderwijs }
+          - { label: "— Graduaat", value: graduaat }
+          - { label: "— Professionele bachelor", value: professionele-bachelor }
+          - { label: "— Academische bachelor", value: academische-bachelor }
+          - { label: "— Master", value: master }
+          - { label: "— Doctoraat & onderzoek", value: doctoraat-en-onderzoek }
+          - { label: Levenslang leren, value: levenslang-leren }
+          - { label: "— Volwassenenonderwijs", value: volwassenenonderwijs }
+          - { label: "— Deeltijds kunstonderwijs", value: deeltijds-kunstonderwijs }
+          - { label: Buitengewoon onderwijs, value: buitengewoon-onderwijs }
+          - { label: Lerarenopleiding, value: lerarenopleiding }
+      - label: Vak
+        name: vak
+        widget: select
+        multiple: true
+        default: [vakoverschrijdend]
+        options:
+          - { label: Vakoverschrijdend, value: vakoverschrijdend }
+          - { label: Talen, value: talen }
+          - { label: "— Nederlands", value: nederlands }
+          - { label: "— Moderne vreemde talen", value: moderne-vreemde-talen }
+          - { label: "— Klassieke talen", value: klassieke-talen }
+          - { label: Wiskunde, value: wiskunde }
+          - { label: Wetenschappen, value: wetenschappen }
+          - { label: "— Biologie", value: biologie }
+          - { label: "— Chemie", value: chemie }
+          - { label: "— Fysica", value: fysica }
+          - { label: "— Natuurwetenschappen", value: natuurwetenschappen }
+          - { label: "STEM & techniek", value: stem-techniek }
+          - { label: "Informatica & digitale competenties", value: informatica-digitale-competenties }
+          - { label: "Mens & maatschappij", value: mens-en-maatschappij }
+          - { label: "— Geschiedenis", value: geschiedenis }
+          - { label: "— Aardrijkskunde", value: aardrijkskunde }
+          - { label: "— Economie", value: economie }
+          - { label: "— Gedragswetenschappen", value: gedragswetenschappen }
+          - { label: "Burgerschap & levensbeschouwing", value: burgerschap-levensbeschouwing }
+          - { label: "Kunst & cultuur", value: kunst-en-cultuur }
+          - { label: "LO & gezondheid", value: lichamelijke-opvoeding-gezondheid }
+          - { label: Beroepsgerichte vorming, value: beroepsgerichte-vorming }
+      - label: Thema
+        name: thema
+        widget: select
+        multiple: true
+        required: false
+        options:
+          - { label: "Beleid & regelgeving", value: beleid-en-regelgeving }
+          - { label: "Evaluatie & fraude", value: evaluatie-en-fraude }
+          - { label: "Didactiek & lespraktijk", value: didactiek-en-lespraktijk }
+          - { label: AI-geletterdheid, value: ai-geletterdheid }
+          - { label: "Privacy & databescherming", value: privacy-en-databescherming }
+          - { label: "Ethiek & maatschappij", value: ethiek-en-maatschappij }
+          - { label: "Tools & platformen", value: tools-en-platformen }
+          - { label: "Onderzoek & evidentie", value: onderzoek-en-evidentie }
+          - { label: Professionalisering, value: professionalisering }
+      - label: Regio
+        name: regio
+        widget: select
+        multiple: true
+        default: [vlaanderen]
+        options:
+          - { label: Vlaanderen, value: vlaanderen }
+          - { label: "— GO! Onderwijs van de Vlaamse Gemeenschap", value: go }
+          - { label: "— Katholiek Onderwijs Vlaanderen", value: katholiek-onderwijs }
+          - { label: "— OVSG (stedelijk & gemeentelijk)", value: ovsg }
+          - { label: "— POV (provinciaal)", value: pov }
+          - { label: "België (federaal)", value: belgie-federaal }
+          - { label: Nederland, value: nederland }
+          - { label: Europese Unie, value: eu }
+          - { label: Internationaal, value: internationaal }
+      - label: Type
+        name: type
+        widget: select
+        default: nieuws
+        options:
+          - { label: Nieuws, value: nieuws }
+          - { label: "Samengevat (Vlaanderen)", value: digest }
+          - { label: "Samengevat (internationaal)", value: digest-internationaal }
+          - { label: "Gids / handleiding", value: gids-handleiding }
+          - { label: Best practice, value: best-practice }
+          - { label: Casestudy, value: casestudy }
+          - { label: Onderzoek, value: onderzoek }
+          - { label: Beleidsdocument, value: beleidsdocument }
+          - { label: Tool review, value: tool-review }
+          - { label: Opinie, value: opinie }
+          - { label: Academische publicatie, value: academische-publicatie }
+          - { label: "Podcast / vodcast", value: podcast-vodcast }
+          - { label: Boek, value: boek }
+      - label: Doelgroep
+        name: doelgroep
+        widget: select
+        multiple: true
+        default: [leerkracht]
+        options:
+          - { label: Leerkracht, value: leerkracht }
+          - { label: "Directie & beleid", value: directie-en-beleid }
+          - { label: "ICT-coördinator", value: ict-coordinator }
+          - { label: Lerarenopleider, value: lerarenopleider }
+          - { label: Ouders, value: ouders }
+          - { label: "Lerende (leerling/student)", value: lerende }
+      - label: Bron (URL)
+        name: bron
+        widget: string
+        required: false
+        hint: Link naar het originele artikel of document.
+      - label: Afbeelding
+        name: image
+        widget: image
+        required: false
+        hint: Optionele thumbnail voor de startpagina.
+      # --- Mediahoek (podcast / vodcast) ---
+      - label: Spotify-show-ID
+        name: spotify_show
+        widget: string
+        required: false
+        hint: "Alleen het ID, bv. 2F2srBvTeYu9Xcg6K910ol (uit open.spotify.com/show/...)."
+      - label: Spotify-afleverings-ID
+        name: spotify_episode
+        widget: string
+        required: false
+      - label: YouTube-video-ID
+        name: youtube_id
+        widget: string
+        required: false
+        hint: "Alleen het ID, bv. dQw4w9WgXcQ (uit youtube.com/watch?v=...)."
+      # --- Boeken ---
+      - { label: Auteur, name: auteur, widget: string, required: false }
+      - label: Uitgever
+        name: uitgever
+        widget: string
+        required: false
+        hint: "Bv. Viking/Penguin (2024)."
+      - { label: Goodreads-URL, name: goodreads_url, widget: string, required: false }
+      - label: Goodreads-score
+        name: goodreads_rating
+        widget: number
+        value_type: float
+        required: false
+      - label: Aantal Goodreads-ratings
+        name: goodreads_ratings
+        widget: number
+        value_type: int
+        required: false
+      - label: Goodreads gecheckt op
+        name: goodreads_checked
+        widget: datetime
+        format: YYYY-MM-DD
+        time_format: false
+        required: false
+      # --- Inhoud ---
+      - { label: Tekst, name: body, widget: markdown }
+
+  - name: paginas
+    label: Pagina's
+    files:
+      - name: over
+        label: Over EducAItion
+        file: over.md
+        fields:
+          - { label: Titel, name: title, widget: string }
+          - { label: Layout, name: layout, widget: hidden, default: page }
+          - { label: Permalink, name: permalink, widget: string, required: false }
+          - { label: Tekst, name: body, widget: markdown }

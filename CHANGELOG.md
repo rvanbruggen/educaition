@@ -7,6 +7,19 @@ sitemap: false
 Versienummer staat in `_config.yml` (`version`) en wordt getoond in de sitefooter,
 samen met datum en uur van de laatste build (= laatste push naar `main`).
 
+## 0.8.0 — 2026-08-26
+
+- Sveltia CMS toegevoegd als beheerinterface op `/admin/`: nieuwe map `admin/`
+  met `index.html` (laadt de CMS-app via CDN) en `config.yml` (contentmodel).
+  Inloggen gebeurt met een GitHub personal access token ("Sign In with Token");
+  er is geen OAuth-server nodig. Wijzigingen via de CMS worden als commits op
+  `main` bewaard en triggeren de normale GitHub Pages-build.
+- Het CMS-contentmodel volgt het tagvocabularium uit `_data/tags.yml` (niveau,
+  vak, thema, regio, type, doelgroep, incl. subniveaus), de Mediahoek-velden
+  (`spotify_show`, `spotify_episode`, `youtube_id`) en de Leeshoek-velden
+  (`auteur`, `uitgever`, Goodreads). Nieuwe tags: eerst in `_data/tags.yml`,
+  daarna spiegelen in `admin/config.yml`.
+
 ## 0.7.1 — 2026-08-25
 
 - Leeshoek toegevoegd aan de Mediahoek (/media/): 13 boekposts (5 Nederlandstalig,
