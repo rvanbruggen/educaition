@@ -1,0 +1,42 @@
+---
+title: "Internationaal samengevat, week 35: Britse leraren koelen af, Stanford relativeert de AI-tutor en de VS eisen bewijs"
+date: 2026-08-30
+niveau: [basisonderwijs, secundair-onderwijs]
+vak: [vakoverschrijdend]
+thema: [onderzoek-en-evidentie, tools-en-platformen, evaluatie-en-fraude, beleid-en-regelgeving]
+regio: [internationaal]
+type: digest-internationaal
+doelgroep: [leerkracht, directie-en-beleid, ict-coordinator]
+description: "Internationaal weekoverzicht AI en onderwijs: Britse leraren gebruiken AI massaal maar koelen af, Stanford relativeert de AI-tutor, de VS eisen bewijs van edtech en het VK scherpt de veiligheidsregels aan — met duiding voor Vlaanderen."
+---
+
+Deze week internationaal: Britse leraren die AI massaal gebruiken maar er minder van verwachten, een Stanford-review die de AI-tutor relativeert, Amerikaans beleid dat bewijs eist van edtech, en nieuwe Britse veiligheidsregels die op 1 september ingaan. De feiten staan er telkens met bron bij — de duiding voor Vlaanderen is onze interpretatie.
+
+**1. VK: acht op de tien leraren gebruiken AI, maar de verwachtingen koelen af.**
+Uit een YouGov-bevraging van 1.033 Britse leraren in opdracht van BETT blijkt dat acht op de tien AI gebruiken voor hun werk, en vier op de tien wekelijks — dubbel zoveel als vorig jaar ([Schools Week, 27 augustus](https://schoolsweek.co.uk/ai-use-cuts-teacher-workload-but-not-hours-worked-study-suggests/)). De helft zegt dat AI hun werklast verlicht, maar slechts 35% werkt effectief minder uren: de gewonnen tijd wordt opgeslokt door andere taken. Opvallend zijn de gaten in de omkadering: 41% kreeg geen enkele training van de school en 48% zegt dat er geen geschreven AI-beleid is. Bij leraren secundair denkt 76% dat ze het voorbije jaar AI-gegenereerd werk hebben verbeterd, en verwachtte slechts 47% komend jaar méér AI te gebruiken, tegenover 68% vorig jaar.
+
+**Wat betekent dit voor Vlaanderen?** Dit is wellicht het eerlijkste beeld van waar een onderwijssysteem uitkomt zonder gestructureerde aanpak: massale individuele adoptie, weinig professionalisering, geen beleid. De AI-verordening verplicht scholen nochtans nu al om te zorgen voor AI-geletterdheid bij hun personeel — wie in Vlaanderen wacht tot het vanzelf goed komt, riskeert dezelfde mix van hoge adoptie en lage omkadering. De les uit de cijfers: tijdswinst komt er niet vanzelf, maar vergt afspraken over wat er met de gewonnen tijd gebeurt.
+
+**2. VS: Stanford-review — AI-tutoring werkt vooral als er een mens naast zit.**
+De National Student Support Accelerator en de AI Hub for Education van Stanford publiceerden een onderzoeksoverzicht dat "AI-tutoring" opsplitst naar de mate van menselijke betrokkenheid ([EdTech Innovation Hub, 27 augustus](https://www.edtechinnovationhub.com/news/stanford-ai-tutoring-human-tutors)). De sterkste evidentie zit bij AI die menselijke tutors ondersteunt: leerlingen van tutors met een AI-coachingsysteem beheersten hun leerstof vaker, met de grootste winst bij zwakker beoordeelde tutors. Volledig geautomatiseerde tutoring kampt met een gebruiksprobleem: in twee gerandomiseerde studies gebruikte 40 à 47% van de leerlingen het AI-platform nooit, en wie het wél gebruikte, deed dat gemiddeld maar twee tot vijf minuten per week. De onderzoekers noemen het effect van AI-only tutoring daarom "onbekend".
+
+**Wat betekent dit voor Vlaanderen?** Nu ook Vlaamse scholen en uitgeverijen AI-tutoren beginnen aan te bieden, is dit een nuttig toetsingskader: een chatbot die één-op-één werkt, erft niet automatisch de bewezen effecten van één-op-één bijles door een mens. De Stanford-aanbeveling — zet AI eerst in om de leraar of tutor sterker te maken, en hou menselijke relaties centraal — sluit aan bij wat we vorige week al zagen in de Britse en Amerikaanse aanpak: de bewezen winst zit vandaag bij lerarenondersteuning, niet bij zelfstandig lerende leerlingen.
+
+**3. VS: federaal onderwijsdepartement — beoordeel edtech op leereffect, niet op schermtijd.**
+Het Amerikaanse Department of Education stuurde op 20 augustus een "Dear Colleague Letter" naar staten en schooldistricten: kies en verleng onderwijstechnologie op basis van bewijs dat ze het leren verbetert, onder meer via gerandomiseerde studies, en durf tools af te voeren die niet renderen ([EdTech Innovation Hub, 25 augustus](https://www.edtechinnovationhub.com/news/us-education-department-urges-schools-to-judge-edtech-by-outcomes-not-screen-time)). De brief maakt een expliciet onderscheid tussen recreatieve schermtijd en instructieve technologie, en verwacht van leveranciers dat ze onafhankelijke evaluaties publiceren en transparant zijn over beperkingen. "Responsible design is the floor", klinkt het — verantwoord ontwerp is het minimum, niet het bewijs dat iets werkt.
+
+**Wat betekent dit voor Vlaanderen?** Dit is dezelfde beweging die we vorige week zagen in de Amerikaanse aankoopworsteling, maar nu als federale richtlijn: de bewijslast verschuift naar de leverancier. Vlaamse scholen die na de Digisprong hun tooling herbekijken, kunnen die vraag letterlijk overnemen in hun aankoopgesprekken — welk onafhankelijk bewijs is er dat deze tool het leren verbetert, bij welke leerlingen, onder welke voorwaarden? Wie geen antwoord krijgt, heeft meteen een objectieve reden om niet te vernieuwen.
+
+**4. VS: waakhond Common Sense Media gaat ChatGPT for Teens onafhankelijk testen.**
+Het Youth AI Safety Institute van Common Sense Media bereidt een onafhankelijke risicobeoordeling voor van ChatGPT for Teens, de tienerversie die OpenAI automatisch activeert bij (vermoedelijke) minderjarigen ([EdTech Innovation Hub, 26 augustus](https://www.edtechinnovationhub.com/news/common-sense-media-to-test-chatgpt-for-teens-over-learning-and-safety-concerns)). De onderzoekers testen onder meer of de "Responsible Homework Reminder" — die spieken moet omleiden naar stapsgewijze hulp — te omzeilen valt, hoe betrouwbaar ouder-meldingen werken, en of aanpasbare stemmen en persoonlijkheden emotionele afhankelijkheid in de hand werken. Een eerdere evaluatie van ChatGPT door dezelfde organisatie eindigde op "High Risk".
+
+**Wat betekent dit voor Vlaanderen?** Deze tienerversie rolt ook bij ons uit — we schreven er eerder over ([ChatGPT voor tieners]({% post_url 2026-08-18-vrt-chatgpt-voor-tieners %})). De kernvraag van de Amerikaanse testers is exact de vraag die Vlaamse leraren zich moeten stellen: beschermt zo'n huiswerkrem echt, of is ze met één slimme prompt te omzeilen? Wacht de onafhankelijke beoordeling af voor je als school op de beloftes van de fabrikant bouwt, en behandel leveranciersclaims over veiligheid zoals het Amerikaanse onderwijsdepartement het hierboven formuleert: als beginpunt, niet als bewijs.
+
+**5. VK: vanaf 1 september gelden nieuwe veiligheidsregels over AI en deepfakes in elke Engelse school.**
+Op 1 september treedt "Keeping children safe in education 2026" in werking, de bindende veiligheidsleidraad voor alle Engelse scholen ([EdTech Innovation Hub](https://www.edtechinnovationhub.com/news/dfe-publishes-kcsie-2026-with-mobile-phone-free-default-and-ai-safeguarding-rules)). Nieuw is onder meer dat de definitie van het maken of delen van naaktbeelden nu expliciet AI-gegenereerde en gemanipuleerde beelden (deepfakes) omvat, dat scholen worden doorverwezen naar de productveiligheidsverwachtingen voor generatieve AI van het Britse onderwijsdepartement, en dat filtering en monitoring — ook van AI-tools — jaarlijks moeten worden geëvalueerd. Scholen worden daarnaast standaard gsm-vrij, tenzij ze uitdrukkelijk anders beslissen.
+
+**Wat betekent dit voor Vlaanderen?** Ook bij ons start het schooljaar, maar zonder equivalent van deze bindende leidraad: AI-veiligheid zit verspreid over de AI-verordening, GDPR en schooleigen reglementen. Het Britse voorbeeld toont hoe je dat concreet maakt — deepfakes expliciet benoemen in het schoolreglement, AI-tools opnemen in de jaarlijkse evaluatie van filtering en monitoring, en één duidelijk aanspreekpunt aanduiden. Een Vlaamse school kan die drie elementen deze week nog in haar eigen beleid schrijven, zonder op regelgeving te wachten.
+
+Vorige editie gemist? Je vindt ze hier: [Internationaal samengevat, week 34]({% post_url 2026-08-23-digest-internationaal-week-34 %}).
+
+*Volgende week een nieuwe editie. Suggesties voor bronnen die we moeten volgen? Open een issue op [GitHub](https://github.com/rvanbruggen/educaition/issues).*
