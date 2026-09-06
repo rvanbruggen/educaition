@@ -66,6 +66,16 @@
         effect "onbekend".
       bron_naam: "EdTech Innovation Hub — Stanford review AI tutoring"
       bron_url: https://www.edtechinnovationhub.com/news/stanford-ai-tutoring-human-tutors
+    - richting: "Toegang volstaat niet: leerlingen gebruiken de tutor amper"
+      samenvatting: >-
+        Een tweejarig cluster-gerandomiseerd experiment in 18 Amerikaanse middenscholen
+        (Oreopoulos & Low, NBER 2026) vond dat Khanmigo, ingesteld om te coachen in plaats
+        van antwoorden te geven, de wiskundeprestaties met slechts 0,06 à 0,08
+        standaarddeviatie per schooljaar verhoogde — vergelijkbaar met oefenen zonder AI.
+        De mediaanleerling stuurde maar op een derde van de oefendagen een bericht, en de
+        berichten waren zelden inhoudelijke wiskundige dialoog.
+      bron_naam: "NBER — One Click Away: AI Tutoring with Khanmigo in a Two-Year School Experiment"
+      bron_url: https://www.nber.org/papers/w35620
     - richting: "Nuance uit de Global South"
       samenvatting: >-
         De Wereldbank zelf benadrukt vijf lessen voor mensgerichte inzet: AI werkt als
