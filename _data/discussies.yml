@@ -36,6 +36,16 @@
         AI-tutor mét didactische vangrails die schade grotendeels vermeed.
       bron_naam: "PNAS — Generative AI without guardrails can harm learning"
       bron_url: https://www.pnas.org/doi/10.1073/pnas.2422633122
+    - richting: "Grootschalige data: het doel van het gebruik bepaalt het verband"
+      samenvatting: >-
+        PISA 2025 (meer dan 760.000 vijftienjarigen in 91 landen) vroeg voor het eerst
+        naar AI-chatbotgebruik. Leerlingen die chatbots gebruiken scoren gemiddeld lager
+        op wetenschappen, ook na correctie voor sociaal-economische achtergrond — maar wie
+        AI wekelijks gebruikt "om te leren" presteert even goed als niet-gebruikers, en wie
+        op school leerde AI-output kritisch te beoordelen scoort licht hoger. De OESO
+        benadrukt dat het om correlaties gaat, niet om bewezen oorzakelijkheid.
+      bron_naam: "OESO — PISA 2025 Results (Volume I)"
+      bron_url: https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en.html
 
 - slug: ai-tutoren
   vraag: "Zijn AI-tutoren een doorbraak voor leerwinst — of een overschatte belofte?"
