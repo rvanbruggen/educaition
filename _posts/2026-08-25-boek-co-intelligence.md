@@ -11,8 +11,8 @@ auteur: "Ethan Mollick"
 uitgever: "Portfolio/Penguin (2024)"
 goodreads_url: https://www.goodreads.com/book/show/198678736-co-intelligence
 goodreads_rating: 3.92
-goodreads_ratings: 17815
-goodreads_checked: 2026-08-25
+goodreads_ratings: 18187
+goodreads_checked: 2026-09-20
 ---
 
 Wharton-professor Ethan Mollick laat op basis van eigen praktijkervaring zien hoe

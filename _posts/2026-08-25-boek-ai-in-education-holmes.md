@@ -12,7 +12,7 @@ uitgever: "Center for Curriculum Redesign (2019)"
 goodreads_url: https://www.goodreads.com/book/show/44235058-artificial-intelligence-in-education
 goodreads_rating: 4.24
 goodreads_ratings: 25
-goodreads_checked: 2026-08-25
+goodreads_checked: 2026-09-20
 ---
 
 Het academische referentiewerk over AI in het onderwijs: beloften én implicaties voor

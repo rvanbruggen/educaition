@@ -11,8 +11,8 @@ auteur: "Karen Hao"
 uitgever: "Penguin Press (2025)"
 goodreads_url: https://www.goodreads.com/book/show/222725518-empire-of-ai
 goodreads_rating: 4.02
-goodreads_ratings: 15214
-goodreads_checked: 2026-08-25
+goodreads_ratings: 15541
+goodreads_checked: 2026-09-20
 ---
 
 Onderzoeksjournaliste Karen Hao reconstrueert de geschiedenis en cultuur van OpenAI:

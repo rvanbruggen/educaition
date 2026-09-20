@@ -11,8 +11,8 @@ auteur: "José Antonio Bowen & C. Edward Watson"
 uitgever: "Johns Hopkins University Press"
 goodreads_url: https://www.goodreads.com/book/show/197636554-teaching-with-ai
 goodreads_rating: 3.77
-goodreads_ratings: 751
-goodreads_checked: 2026-08-25
+goodreads_ratings: 757
+goodreads_checked: 2026-09-20
 ---
 
 Internationaal de meest aanbevolen praktijkgids voor docenten die AI in hun onderwijs
