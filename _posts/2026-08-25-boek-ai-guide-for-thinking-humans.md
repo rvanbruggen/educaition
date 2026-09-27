@@ -10,9 +10,9 @@ doelgroep: [leerkracht, lerende]
 auteur: "Melanie Mitchell"
 uitgever: "Farrar, Straus and Giroux / Penguin"
 goodreads_url: https://www.goodreads.com/book/show/43565360-artificial-intelligence
-goodreads_rating: 4.33
-goodreads_ratings: 4211
-goodreads_checked: 2026-09-20
+goodreads_rating: 4.32
+goodreads_ratings: 4320
+goodreads_checked: 2026-09-27
 ---
 
 AI-onderzoekster Melanie Mitchell (Santa Fe Institute) legt uit hoe AI werkt en

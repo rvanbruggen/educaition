@@ -10,7 +10,7 @@ doelgroep: [lerarenopleider, directie-en-beleid]
 auteur: "Wayne Holmes & Kaśka Porayska-Pomsta (red.)"
 uitgever: "Routledge"
 goodreads_url: https://www.goodreads.com/book/show/60255666-the-ethics-of-artificial-intelligence-in-education
-goodreads_checked: 2026-08-25
+goodreads_checked: 2026-09-27
 ---
 
 Academische bundel over de ethische kernvragen bij AI in het onderwijs: wat betekent

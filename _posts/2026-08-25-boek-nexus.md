@@ -11,8 +11,8 @@ auteur: "Yuval Noah Harari"
 uitgever: "Random House (2024)"
 goodreads_url: https://www.goodreads.com/book/show/204927599-nexus
 goodreads_rating: 4.15
-goodreads_ratings: 54145
-goodreads_checked: 2026-08-25
+goodreads_ratings: 55426
+goodreads_checked: 2026-09-27
 ---
 
 Harari plaatst AI in het grote verhaal van informatienetwerken, van de eerste

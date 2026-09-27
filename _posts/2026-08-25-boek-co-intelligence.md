@@ -10,9 +10,9 @@ doelgroep: [leerkracht, directie-en-beleid]
 auteur: "Ethan Mollick"
 uitgever: "Portfolio/Penguin (2024)"
 goodreads_url: https://www.goodreads.com/book/show/198678736-co-intelligence
-goodreads_rating: 3.92
-goodreads_ratings: 18187
-goodreads_checked: 2026-09-20
+goodreads_rating: 3.91
+goodreads_ratings: 18300
+goodreads_checked: 2026-09-27
 ---
 
 Wharton-professor Ethan Mollick laat op basis van eigen praktijkervaring zien hoe

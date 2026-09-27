@@ -13,7 +13,7 @@ isbn: "9789024474622"
 goodreads_url: https://www.goodreads.com/book/show/199910517-chatten-met-napoleon
 goodreads_rating: 3.63
 goodreads_ratings: 46
-goodreads_checked: 2026-08-25
+goodreads_checked: 2026-09-27
 ---
 
 Uitgegroeid tot hét Nederlandstalige standaardwerk over generatieve AI in het

@@ -11,9 +11,9 @@ auteur: "Geertrui Mieke De Ketelaere"
 uitgever: "Pelckmans"
 isbn: "9789463370912"
 goodreads_url: https://www.goodreads.com/book/show/55974133-mens-versus-machine
-goodreads_rating: 3.91
-goodreads_ratings: 70
-goodreads_checked: 2026-08-25
+goodreads_rating: 3.92
+goodreads_ratings: 71
+goodreads_checked: 2026-09-27
 ---
 
 Toegankelijke introductie tot de basisconcepten van artificiële intelligentie, door

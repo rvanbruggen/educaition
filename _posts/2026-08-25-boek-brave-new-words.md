@@ -10,9 +10,9 @@ doelgroep: [leerkracht, ouders, directie-en-beleid]
 auteur: "Salman Khan"
 uitgever: "Viking/Penguin (2024)"
 goodreads_url: https://www.goodreads.com/book/show/196848520-brave-new-words
-goodreads_rating: 3.58
-goodreads_ratings: 3414
-goodreads_checked: 2026-09-20
+goodreads_rating: 3.57
+goodreads_ratings: 3433
+goodreads_checked: 2026-09-27
 ---
 
 De oprichter van Khan Academy schreef het eerste breed toegankelijke boek over de
