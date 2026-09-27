@@ -174,3 +174,28 @@
         eindverantwoordelijkheid moet aantoonbaar bij de leerkracht blijven.
       bron_naam: "Kennisnet — wetgeving rond AI en het onderwijs"
       bron_url: https://www.kennisnet.nl/artificial-intelligence/wetgeving-rond-ai-en-het-onderwijs/
+
+- slug: ai-weren-of-integreren
+  vraag: "Moeten scholen AI voor leerlingen (voorlopig) weren — of net leren gebruiken?"
+  context: >-
+    Terwijl sommige onderwijssystemen AI-tools voor leerlingen tijdelijk verbieden,
+    kiezen andere net voor begeleide integratie. De onderliggende zorgen — privacy,
+    welzijn en onduidelijk leereffect — zijn dezelfde; de conclusie verschilt.
+  standpunten:
+    - richting: "Pauzeer AI voor leerlingen tot de vragen beantwoord zijn"
+      samenvatting: >-
+        De twee grootste Amerikaanse schooldistricten, New York City en Los Angeles,
+        verbieden AI-tools voor leerlingen tijdens het schooljaar 2026-27 (in New York
+        voor lager en middelbaar). De moratoria kwamen er na acties van ouders,
+        buurtbewoners en leraren, met zorgen over de bescherming van leerlingdata en
+        welzijn en twijfel of AI de leerresultaten wel verbetert.
+      bron_naam: "K-12 Dive — A summer of AI bans in schools"
+      bron_url: https://www.k12dive.com/news/a-summer-of-ai-bans-in-schools/829862/
+    - richting: "Niet weren, maar kritisch en verantwoord leren gebruiken"
+      samenvatting: >-
+        Vlaams onderwijsminister Zuhal Demir stelt dat kinderen beschermen niet betekent
+        dat AI buiten de schoolpoort moet blijven, maar dat jongeren en leerkrachten AI
+        kritisch en verantwoord moeten leren gebruiken — binnen een veilige omgeving,
+        met duidelijke afspraken en de mens aan het stuur.
+      bron_naam: "VRT NWS — Minister Demir maakt 10 miljoen euro vrij om onderwijs met AI te leren omgaan"
+      bron_url: https://www.vrt.be/vrtnws/nl/2026/06/11/vlaamse-universiteiten-krijgen-10-miljoen-euro-om-ai-beleid-voor/
