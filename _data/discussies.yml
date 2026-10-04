@@ -86,6 +86,18 @@
         berichten waren zelden inhoudelijke wiskundige dialoog.
       bron_naam: "NBER — One Click Away: AI Tutoring with Khanmigo in a Two-Year School Experiment"
       bron_url: https://www.nber.org/papers/w35620
+    - richting: "Een AI-tutor aanbieden kan zelfs averechts werken"
+      samenvatting: >-
+        Een gerandomiseerde studie aan de University of Maryland (2.379 bachelorstudenten,
+        30 docenten, najaar 2025) vond dat studenten met toegang tot een op GPT-4o
+        gebaseerde studieassistent ongeveer vier procentpunten lager eindigden en minder
+        met het cursusmateriaal werkten. Slechts zo'n 15 procent gebruikte de tutor
+        effectief, en de meeste docenten lieten de standaardinstelling "directe instructie"
+        staan. De onderzoekers benadrukken dat dit niet bewijst dat doelgericht ontworpen
+        AI-tutoring geen nut heeft, en wijzen op beperkingen zoals het gebruik van
+        cursuscijfers in plaats van een onafhankelijke toets.
+      bron_naam: "EdTech Innovation Hub — University of Maryland trial AI-tutor"
+      bron_url: https://www.edtechinnovationhub.com/news/students-offered-an-ai-tutor-got-lower-grades-and-disengaged-from-course-materials-university-of-maryland-trial-finds
     - richting: "Nuance uit de Global South"
       samenvatting: >-
         De Wereldbank zelf benadrukt vijf lessen voor mensgerichte inzet: AI werkt als
