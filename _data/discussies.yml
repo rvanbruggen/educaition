@@ -104,6 +104,16 @@
         aanvulling op leraren, niet als vervanging, en context bepaalt het effect.
       bron_naam: "World Bank blog — People-centered AI in education"
       bron_url: https://blogs.worldbank.org/en/education/people-centered-ai-in-education--five-lessons-from-the-global-so
+    - richting: "Nieuwe grootschalige studie trekt de balans weer richting 'doorbraak'"
+      samenvatting: >-
+        StudentBench, een platform met meer dan 175.000 student-AI-berichten, vergeleek bij
+        2.383 deelnemers leerwinst op GRE-vragen (taal en wiskunde) tussen AI-tutoring,
+        menselijke tutoring en geen tutoring. De beste AI-tutor bleek statistisch
+        gelijkwaardig aan ervaren menselijke tutoren (p = .015) en overtrof hen zelfs in vijf
+        van de zeven domeinen, tegen een kostprijs van ongeveer 918 keer minder per gewonnen
+        procentpunt — een tegengewicht voor de Maryland-studie hierboven.
+      bron_naam: "arXiv — StudentBench (preprint, ingediend 23 september 2026)"
+      bron_url: https://arxiv.org/abs/2609.28470
 
 - slug: toetsing
   vraag: "Moeten examens terug naar pen, papier en mondeling?"
