@@ -142,6 +142,16 @@
         strijd tegen de technologie.
       bron_naam: "De Correspondent — Tijd voor een ander soort examen"
       bron_url: https://decorrespondent.nl/16758/ai-taalmodellen-redeneren-inmiddels-beter-dan-de-beste-studenten-tijd-voor-een-ander-soort-examen/f806aadd-dba4-0d3b-390c-074f4993e094
+    - richting: "Detectie is onbetrouwbaar en bevooroordeeld"
+      samenvatting: >-
+        Yale, Cornell en de University of Wisconsin-Madison ontraden of verbieden het
+        gebruik van AI-detectiescores als bewijs in tuchtzaken, nadat een
+        Stanford-onderzoek vond dat zulke tools 61 procent van essays van
+        niet-moedertaalsprekers ten onrechte als AI-geschreven bestempelden. Scholen
+        schakelen in plaats daarvan over op mondelinge examens, bewaakte toetsen en
+        evaluatie van het schrijfproces zelf.
+      bron_naam: "ETC Journal — Amerikaanse universiteiten laten AI-detectoren vallen"
+      bron_url: https://etcjournal.com/2026/10/07/briefing-10-7-26-us-universities-give-up-on-ai-detectors/
 
 - slug: kansengelijkheid
   vraag: "Verkleint AI de kansenongelijkheid — of vergroot ze die?"
