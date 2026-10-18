@@ -46,6 +46,16 @@
         benadrukt dat het om correlaties gaat, niet om bewezen oorzakelijkheid.
       bron_naam: "OESO — PISA 2025 Results (Volume I)"
       bron_url: https://www.oecd.org/en/publications/pisa-2025-results-volume-i_73451bc5-en.html
+    - richting: "Hoe je AI gebruikt bepaalt of de winst beklijft"
+      samenvatting: >-
+        Een experimentele studie liet studenten onder toezicht een essay schrijven over een
+        onbekend onderwerp, met of zonder generatieve AI, gevolgd door een onaangekondigde
+        test meteen erna en een week later. AI-toegang verhoogde de testscores, met een
+        kleinere maar zichtbare winst die een week later nog standhield — maar enkel bij
+        studenten die AI als tutor inzetten ("augmentation"); bij studenten die AI het werk
+        liet overnemen ("automation") verdween die winst weer.
+      bron_naam: "arXiv — Contractor & Reyes, AI als tutor versus ghostwriter (preprint, bijgewerkt 4 oktober 2026)"
+      bron_url: https://arxiv.org/abs/2607.08849
 
 - slug: ai-tutoren
   vraag: "Zijn AI-tutoren een doorbraak voor leerwinst — of een overschatte belofte?"
