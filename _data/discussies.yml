@@ -162,6 +162,15 @@
         evaluatie van het schrijfproces zelf.
       bron_naam: "ETC Journal — Amerikaanse universiteiten laten AI-detectoren vallen"
       bron_url: https://etcjournal.com/2026/10/07/briefing-10-7-26-us-universities-give-up-on-ai-detectors/
+    - richting: "Onbewaakte online examens zijn extra kwetsbaar"
+      samenvatting: >-
+        Aan de Zuid-Koreaanse Konkuk-universiteit moesten meer dan 600 studenten een
+        online tussentijds examen met livebewaking via videoconferentie overdoen nadat
+        een student publiek bevestigde met AI-gegenereerde antwoorden een score van 99
+        te hebben behaald. De zaak toont hoe AI-fraude bij niet-fysiek bewaakte toetsen
+        in één keer een hele cohort kan treffen, niet enkel individuele fraudeurs.
+      bron_naam: "The Kyunghyang Shinmun — Konkuk-universiteit laat examen overdoen na AI-fraude"
+      bron_url: https://www.khan.co.kr/en/article/202610232200017
 
 - slug: kansengelijkheid
   vraag: "Verkleint AI de kansenongelijkheid — of vergroot ze die?"
