@@ -56,6 +56,16 @@
         liet overnemen ("automation") verdween die winst weer.
       bron_naam: "arXiv — Contractor & Reyes, AI als tutor versus ghostwriter (preprint, bijgewerkt 4 oktober 2026)"
       bron_url: https://arxiv.org/abs/2607.08849
+    - richting: "Grootschalig overzicht: ook als leerondersteuning geen consistente leerwinst"
+      samenvatting: >-
+        Een overzicht van 52 gerandomiseerde en quasi-experimentele studies door Stanford
+        University's AI Hub for Education vond dat AI-gebruik als leerondersteuning
+        (uitleg, oefenvragen) doorgaans betere resultaten gaf dan wanneer leerlingen AI het
+        werk lieten overnemen, maar dat geen van beide gebruikswijzen consequent tot
+        positieve leerresultaten leidde over alle studies heen. Slechts 10 van de 52
+        studies betroffen Amerikaanse K-12-leerlingen, wat de veralgemeenbaarheid beperkt.
+      bron_naam: "Education Week — Stanford-overzicht van 52 studies naar leereffect van generatieve AI"
+      bron_url: https://www.edweek.org/technology/is-ai-good-or-bad-for-learning-the-answer-isnt-so-simple/2026/11
 
 - slug: ai-tutoren
   vraag: "Zijn AI-tutoren een doorbraak voor leerwinst — of een overschatte belofte?"
